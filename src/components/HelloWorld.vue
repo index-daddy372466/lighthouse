@@ -4,18 +4,30 @@ defineProps({
     type: String,
     required: true,
   },
+  sub:{
+    type:String,
+    required:true,
+  },
+
 })
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
-  </div>
+  <div id="header-container">
+    <!-- logo image -->
+    <a href="#">
+      <img src="../assets/media/lh-green.png" alt="picture of lighthouse" id="logo" class="lighthouse lighhouse-png png-lighthouse scale-out" width="125" height="125">
+    </a>
+    
+
+    <div id="title-container">
+      <h1 class="green">{{ msg }}</h1>
+    </div>
+
+    <hr id="header-hr">
+
+    <h3 id="subheader">{{ sub }}</h3>
+  </div>  
 </template>
 
 <style scoped>
