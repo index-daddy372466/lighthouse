@@ -3,6 +3,7 @@ import MainView from './components/MainView.vue';
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import Footer from './components/Footer.vue';
+import ElementScanner from './components/ElementScanner.vue';
 </script>
 
 <template>
@@ -10,6 +11,9 @@ import Footer from './components/Footer.vue';
     <header>
       <HelloWorld msg="The Lighthouse" sub="Live, Laugh, Scroll" />
     </header>
+
+    <!-- element scanner -->
+     <ElementScanner/>
 
     <!-- main -->
       <MainView />

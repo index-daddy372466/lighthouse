@@ -18,12 +18,12 @@ defineProps({
 #hr-container{
     width:100%;
     position:fixed;
-    top:300px;
+    top:90%;
 }
     hr#scanner{
         width:100%;
         border:none;
         height:2px;
-        background:yellow;
+        /* background:yellow; */
     }
 </style>
