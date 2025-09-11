@@ -1,12 +1,18 @@
-<script setup>
-defineProps({})
+<script>
+export default {
+  data() {
+    return {
+      showPos: window.innerWidth > 870
+    };
+  }
+}
 </script>
 
 
 <template>
     <div id="mouse-pos-container">
-        <p id="posX" class="border-btm-sm mouse-pos-para align-right">X: 0</p>
-        <p id="posY" class="border-btm-sm mouse-pos-para align-right">Y: 0</p>
+        <p v-if="showPos" id="posX" class="border-btm-sm mouse-pos-para align-right">X: 0</p>
+        <p v-if="showPos" id="posY" class="border-btm-sm mouse-pos-para align-right">Y: 0</p>
     </div>
 </template>
 
@@ -19,5 +25,7 @@ defineProps({})
 .mouse-pos-para{
     color:hsla(160, 100%, 37%, 1);;
 }
+
+
 
 </style>

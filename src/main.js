@@ -6,9 +6,6 @@ import App from './App.vue'
 createApp(App).mount('#app')
 
 
-
-
-
 // scan element
 function scanElement(pos1,pos2){
     // pos 1 = hr y position
@@ -57,9 +54,11 @@ for(let i = 0; i < intros.length; i++){
 
 
 /*  ------------------------------------------------------ window onmosuemove onclick ------------------------------------------------------ */
-window.addEventListener('mousemove',mousemoveEvent)
-window.addEventListener('touchmove',mousemoveEvent)
-window.addEventListener('click',clickTarget)
+if(window.innerWidth > 870){
+    window.addEventListener('mousemove',mousemoveEvent)
+    window.addEventListener('touchmove',mousemoveEvent)
+    window.addEventListener('click',clickTarget)
+}
 
     let tip1 = document.createElement('hr')
     let tip2 = document.createElement('hr') 
@@ -131,8 +130,6 @@ function clickTarget(e){
 
     },250)
 }
-
-
 
 // window on mousemove end
 /*  ------------------------------------------------------ window onmosuemove onclick ------------------------------------------------------ */
