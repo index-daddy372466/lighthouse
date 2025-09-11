@@ -25,6 +25,7 @@ header{
   image-rendering: crisp-edges;
   transition: .25s;
 }
+
 #logo{
   position:fixed;
   left:25px;

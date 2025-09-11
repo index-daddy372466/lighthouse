@@ -15,7 +15,7 @@ defineProps({
 <template>
   <div id="header-container">
     <!-- logo image -->
-    <a href="#">
+    <a href="#" id="lighthouse-logo">
       <img src="../assets/media/lh-green.png" alt="picture of lighthouse" id="logo" class="lighthouse lighhouse-png png-lighthouse scale-out" width="125" height="125">
     </a>
     
@@ -31,6 +31,9 @@ defineProps({
 </template>
 
 <style scoped>
+#header-container{
+  z-index:999;
+}
 h1 {
   font-weight: 500;
   font-size: 2.6rem;

@@ -1,6 +1,6 @@
 <script setup>
 import MainView from './components/MainView.vue';
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import Footer from './components/Footer.vue';
 import ElementScanner from './components/ElementScanner.vue';
@@ -9,7 +9,7 @@ import ElementScanner from './components/ElementScanner.vue';
 <template>
     <!-- header -->
     <header>
-      <HelloWorld msg="The Lighthouse" sub="Live, Laugh, Scroll" />
+      <Header msg="The Lighthouse" sub="Live, Laugh, Scroll" />
     </header>
 
     <!-- element scanner -->
