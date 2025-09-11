@@ -18,6 +18,11 @@
 header{
     width:100%;
     height:150px;
+  }
+  .absolute{
+    position:absolute;
+  }
+  .fixed{
     position:fixed;
   }
 #logo,#logo-footer{
@@ -29,7 +34,7 @@ header{
 #logo{
   position:fixed;
   left:25px;
-  top:50px;
+  top:30px;
 }
 #logo-footer{
     left:25px;
@@ -58,6 +63,12 @@ header{
   }
   
 }
+.bg-trans{
+  background-image:transparent !important;
+}
+.bg-black{
+  background-image:linear-gradient(#000,transparent 99%) !important;
+}
 #subheader{
   transform:translate(0,50px);
 }
@@ -65,14 +76,14 @@ header{
   width:100%;
   position:fixed;
   left:0;
-  top:200px;
+  transition:.25s;
+  top:170px;
 }
 
 .hr-tip{
   /* background:#fff; */
   position: fixed;
   border:1.5px dotted ghostwhite;
-  /* transition: .25s; */
 }
 .no-pointer{
   pointer-events: none;
@@ -113,20 +124,20 @@ width:10%;
 right:0;
 }
 .hr-active-tip1-ext{
-transition:.5s;
+transition:.35s;
   height:100%;
 }
 .hr-active-tip2-ext{
-transition:.5s;
+transition:.35s;
 width:100%;
 left:0;
 }
 .hr-active-tip3-ext{
-transition:.5s;
+transition:.35s;
 height:100%;
 }
 .hr-active-tip4-ext{
-transition:.5s;
+transition:.35s;
 width:100%;
 right:0;
 }
@@ -153,6 +164,7 @@ a,
   }
   #logo{
     left:0;
+    top:30px;
   }
   .green{
     transform:translate(100px,0);

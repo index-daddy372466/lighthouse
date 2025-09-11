@@ -15,7 +15,7 @@ defineProps({
 <!-- main view -->
  <div id="wrapper">
     <!-- intro -->
-    <Pararaph lang="html" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci delectus."/>
+    <Pararaph lang="html" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci."/>
     <Pararaph lang="css" msg="facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Pararaph lang="js" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Pararaph lang="react" msg="perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>

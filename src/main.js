@@ -23,15 +23,37 @@ function scanElement(pos1,pos2){
 
 const hr = document.getElementById('scanner')
 const headerhr = document.getElementById('header-hr')
+const header = document.querySelector('header')
 let intros = document.querySelectorAll('.para')
 let mouseparas = document.querySelectorAll('.mouse-pos-para')
 /*  ------------------------------------------------------ window onscroll ------------------------------------------------------ */
-window.onscroll = () => {
+let scrollTop = document.body.scrollTop
+window.onscroll = (e) => {
+
+// if window top is gt 0
+console.log(scrollTop)
+console.log(scrollY)
+
+if(scrollY === scrollTop){
+    headerhr.style.top = 170 + "px"
+    console.log("Absolute top")
+    header.classList.remove('bg-black')
+    header.classList.add('absolute')
+    header.classList.remove('fixed')
+}
+if(scrollY > scrollTop){
+    headerhr.style.top = 200 + "px"
+    header.classList.add('bg-black')
+    console.log("Fixed Top")
+    header.classList.add('fixed')
+    header.classList.remove('absolute')
+}
+
 for(let i = 0; i < intros.length; i++){
     let ypos = intros[i].getBoundingClientRect().y;
     let bottomypos = ypos + intros[i].clientHeight;
     let hrpos = hr.getBoundingClientRect().y
-    let headerhrpos = headerhr.getBoundingClientRect().y + 90
+    let headerhrpos = headerhr.getBoundingClientRect().y + 150
     // scanning between scanner-hr & top element - DOWN
     if(intros[i].classList.contains('hidden')){
         if(scanElement(hrpos,ypos)){

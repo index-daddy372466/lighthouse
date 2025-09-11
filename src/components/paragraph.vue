@@ -23,6 +23,7 @@ console.log(props.lang)
 
 <style scope>
 #para-container{
+    transform:translate(0,100%);
     min-width:300px;
     max-width:500px;
     /* border:2px solid red; */
@@ -70,7 +71,7 @@ console.log(props.lang)
         opacity:1;
     }
     to{
-        transform:translate(0,100%);
+        /* transform:translate(0,100%); */
         opacity:0;
     }
     
