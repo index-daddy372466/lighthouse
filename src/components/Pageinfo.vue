@@ -6,7 +6,8 @@ defineProps({})
 const today = new Date()
 const formattedDate = ref(today.toISOString().slice(0,10))
 
-const formattedTime = ref(today.toTimeString().slice(0,12))
+let formattedTime = ref(today.toTimeString().slice(0,12))
+
 </script>
 
 

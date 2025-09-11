@@ -1,5 +1,6 @@
 <script setup>
-defineProps({
+import { ref } from 'vue';
+let props = defineProps({
     date:{
         type:String,
         required:true
@@ -9,12 +10,14 @@ defineProps({
         required:true
     }
 })
+
+
 </script>
 
 
 <template>
     <div id="current-time-container">
-        <p id="time-label" class="align-right border-btm-sm">{{ date }}</p>
+        <p id="date-label" class="align-right border-btm-sm">{{ date }}</p>
         <p id="time-label" class="align-right border-btm-sm">{{ time }}</p>
     </div>
 </template>
@@ -22,7 +25,7 @@ defineProps({
 
 <style scope>
 
-#time-label{
+#time-label,#date-label{
     color:hsla(160, 100%, 37%, 1);
 }
 

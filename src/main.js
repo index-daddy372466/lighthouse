@@ -1,10 +1,18 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
 import App from './App.vue'
 
 createApp(App).mount('#app')
 
+
+
+// handle/update the time
+const timer = document.getElementById('time-label');
+setInterval(()=>{
+    let currentTime = new Date().toTimeString().slice(0,12);
+    timer.textContent = currentTime
+    console.log("time update")
+},1000)
 
 // scan element
 function scanElement(pos1,pos2){
