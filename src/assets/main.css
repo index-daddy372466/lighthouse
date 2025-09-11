@@ -60,12 +60,75 @@ header{
   top:200px;
 }
 
+.hr-tip{
+  /* background:#fff; */
+  position: fixed;
+  border:1.5px dotted ghostwhite;
+  /* transition: .25s; */
+}
+.no-pointer{
+  pointer-events: none;
+}
+/* verticle */
+.tip1{
+width:2.5px;
+height:0;
+}
+/* horizontal */
+.tip2{
+  height:2.5px;
+  width:0;
+}
+.tip3{
+width:2.5px;
+height:0;
+}
+/* horizontal */
+.tip4{
+  height:2.5px;
+  width:0;
+}
+.hr-active-tip1{
+  height:10%;
+  top:0;
+}
+.hr-active-tip2{
+width:10%;
+left:0;
+}
+.hr-active-tip3{
+height:10%;
+bottom:0;
+}
+.hr-active-tip4{
+width:10%;
+right:0;
+}
+.hr-active-tip1-ext{
+transition:.5s;
+  height:100%;
+}
+.hr-active-tip2-ext{
+transition:.5s;
+width:100%;
+left:0;
+}
+.hr-active-tip3-ext{
+transition:.5s;
+height:100%;
+}
+.hr-active-tip4-ext{
+transition:.5s;
+width:100%;
+right:0;
+}
 
 a,
 .green {
   text-decoration: none;
   color: var(--col-primary);
   transition: 0.4s;
+  margin-left:50px;
 }
 #title-container>h1{
   font-size:80px;
@@ -84,7 +147,13 @@ a,
     left:0;
   }
   .green{
-    transform:translate(100px,0)
+    transform:translate(100px,0);
+    margin-left:unset !important;
+    text-align:center;
+  }
+
+  #para-id{
+    font-size:11pt;
   }
   
 }

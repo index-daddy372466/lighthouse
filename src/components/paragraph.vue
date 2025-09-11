@@ -1,36 +1,42 @@
 <script setup>
-defineProps({
+const props = defineProps({
     msg:{
         type:String,
         required:true
+    },
+    lang:{
+        type:String,
+        required:false
     }
 })
+
+console.log(props.lang)
 </script>
+
+
 <template>
-    <div id="intro-container" class="vh-100">
-        <p id="intro-para" class="para hidden">{{ msg }}</p>
+    <div id="para-container" class="vh-100 into-bg">
+        <p id="para-id" class="para hidden">{{ msg }}</p>
     </div>
 </template>
 
+
 <style scope>
-#intro-container{
+#para-container{
     min-width:300px;
     max-width:500px;
     /* border:2px solid red; */
     background:transparent;
-    background-repeat: no-repeat;
-    background-position:66px 10%;
-    background-blend-mode: multiply;
-    background-size:contain;
-    background-image: url('../assets/media/lh-red.png');
 }
-
-#intro-para{
+#para-id{
+    box-shadow:.25rem .25rem 10px .9px #2c3e509b;
     padding:.5rem;
-    border-radius:20px;
-    background-image:linear-gradient(0deg,rgba(0, 189, 126, 0.512) 10%,#181818 90%);
+    border-radius: 12px;
+    background-image:linear-gradient(0deg,rgba(0, 189, 126, 0.512),transparent 70%);
+    filter: contrast(150%);
     line-height:1.75;
-    text-indent: .5in;
+    text-indent: .25in;
+    transform:translate(0,0)
 }
 .hidden{
     opacity:0;
@@ -45,9 +51,10 @@ defineProps({
 .vh-100{
     min-height: 100vh;
 }
+
 @keyframes appearelement {
     from{
-        transform:translate(-100%,0);
+        transform:translate(0,100%);
         opacity:0;
     }
     to{
@@ -63,7 +70,7 @@ defineProps({
         opacity:1;
     }
     to{
-        transform:translate(-100%,0);
+        transform:translate(0,100%);
         opacity:0;
     }
     

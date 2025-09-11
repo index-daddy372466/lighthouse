@@ -22,7 +22,7 @@ msg:{
 
 <style scoped>
 #footer{
-    background-image:linear-gradient(0,rgba(0, 189, 126, 0.793),#181818);
+    background-image:linear-gradient(0,rgba(0, 189, 126, 0.793),transparent);
     height:150px;
     width:100%;
     bottom:0;

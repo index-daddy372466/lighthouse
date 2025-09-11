@@ -1,6 +1,6 @@
 
 <script setup>
-import Introduction from './Introduction.vue';
+import Pararaph from './paragraph.vue';
 import Footer from './Footer.vue';
 import ElementScanner from './ElementScanner.vue';
 defineProps({
@@ -13,14 +13,12 @@ defineProps({
 <!-- main view -->
  <div id="wrapper">
     <!-- intro -->
-    <Introduction msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Introduction msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Introduction msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Introduction msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Introduction msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Introduction msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    
-    
+    <Pararaph lang="html" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci delectus."/>
+    <Pararaph lang="css" msg="facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
+    <Pararaph lang="js" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
+    <Pararaph lang="react" msg="perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
+    <Pararaph lang="vue" msg="Lorem ipsum dolor sit amet consectetur  facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
+    <Pararaph lang="node" msg="Lorem ipsum dolor sit amet consectetur "/>
     <!-- footer -->
     <Footer />
  </div>
@@ -28,7 +26,7 @@ defineProps({
 
 <style scoped>
 #wrapper{
-    transform:translateY(100vh);
+    /* transform:translateY(100vh); */
     min-height:4000px;
     width:100%;
     /* border-top:2px solid red; */
@@ -36,7 +34,7 @@ defineProps({
     position:relative;
     display:flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content:space-evenly;
     padding: 1rem .75rem 0;
     gap:3rem;
