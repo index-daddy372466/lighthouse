@@ -2,14 +2,16 @@
 <script setup>
 import Pararaph from './paragraph.vue';
 import Footer from './Footer.vue';
-import ElementScanner from './ElementScanner.vue';
+import Pageinfo from './Pageinfo.vue'
+
 defineProps({
 
 })
 </script>
 
-
 <template>
+    <!-- page information -->
+     <Pageinfo />
 <!-- main view -->
  <div id="wrapper">
     <!-- intro -->

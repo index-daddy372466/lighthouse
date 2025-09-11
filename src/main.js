@@ -19,6 +19,7 @@ function scanElement(pos1,pos2){
 const hr = document.getElementById('scanner')
 const headerhr = document.getElementById('header-hr')
 let intros = document.querySelectorAll('.para')
+let mouseparas = document.querySelectorAll('.mouse-pos-para')
 /*  ------------------------------------------------------ window onscroll ------------------------------------------------------ */
 window.onscroll = () => {
 for(let i = 0; i < intros.length; i++){
@@ -88,26 +89,32 @@ window.addEventListener('click',clickTarget)
 
 
 function mousemoveEvent(e){
-        let pos = {x:e.clientX||e.changedTouches[0]['clientX'],y:(e.clientY||e.changedTouches[0]['clientY'])}
+        let pos = {x:e.pageX||e.changedTouches[0]['clientX'],y:(e.pageY||e.changedTouches[0]['clientY'])}
+    // update mouse para information (top right page)
+    mouseparas.forEach(para => {
+        if(para.id==='posX') para.textContent = 'X: ' + pos.x
+        if(para.id==='posY') para.textContent = 'Y: ' + pos.y
+    })
+
     tip1.style.left = pos.x + "px"
     tip1.classList.add('hr-active-tip1')
-    tip2.style.top = pos.y + "px"
+    tip2.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip2.classList.add('hr-active-tip2')
     tip3.style.left = pos.x + "px"
     tip3.classList.add('hr-active-tip3')
-    tip4.style.top = pos.y + "px"
+    tip4.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip4.classList.add('hr-active-tip4')
 }
 
 function clickTarget(e){
-        let pos = {x:e.clientX||e.changedTouches[0]['clientX'],y:e.clientY||e.changedTouches[0]['clientY']}
+        let pos = {x:e.pageX||e.changedTouches[0]['clientX'],y:e.pageY||e.changedTouches[0]['clientY']}
     tip1.style.left = pos.x + "px"
     tip1.classList.toggle('hr-active-tip1-ext')
-    tip2.style.top = pos.y + "px"
+    tip2.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip2.classList.toggle('hr-active-tip2-ext')
     tip3.style.left = pos.x + "px"
     tip3.classList.toggle('hr-active-tip3-ext')
-    tip4.style.top = pos.y + "px"
+    tip4.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip4.classList.toggle('hr-active-tip4-ext')
 
     setTimeout(()=> {
@@ -115,12 +122,12 @@ function clickTarget(e){
         // tip1.style.left = document.body.clientWidth/2 + "px"
         tip1.style.left = pos.x + "px"
         tip2.classList.remove('hr-active-tip2-ext')
-        tip2.style.top = pos.y + "px"
+        tip2.style.top = e.clientY + "px"
         tip3.classList.remove('hr-active-tip3-ext')
         // tip3.style.left = document.body.clientWidth/2 + "px"
         tip3.style.left = pos.x + "px"
         tip4.classList.remove('hr-active-tip4-ext')
-        tip4.style.top = pos.y + "px"
+        tip4.style.top = e.clientY + "px"
 
     },250)
 }
