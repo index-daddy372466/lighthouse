@@ -26,13 +26,13 @@ defineProps({
 
     <hr id="header-hr">
 
-    <h3 id="subheader">{{ sub }}</h3>
+    <em id="subheader">{{ sub }}</em>
   </div>  
 </template>
 
 <style scoped>
 #header-container{
-  z-index:999;
+  z-index:998;
 }
 h1 {
   font-weight: 500;
@@ -49,7 +49,9 @@ h3 {
 .greetings h3 {
   text-align: center;
 }
-
+#subheader{
+  transform:translate(0,50px);
+}
 @media (min-width: 1024px) {
   .greetings h1,
   .greetings h3 {

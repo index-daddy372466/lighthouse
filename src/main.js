@@ -1,17 +1,16 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-
+/*------------------------ mount app ------------------------ */
 createApp(App).mount('#app')
-
+/*------------------------ mount app ------------------------ */
 
 
 // handle/update the time
 const timer = document.getElementById('time-label');
 setInterval(()=>{
-    let currentTime = new Date().toTimeString().slice(0,12);
+    let currentTime = new Date().toTimeString().slice(0,9);
     timer.textContent = currentTime
-    console.log("time update")
 },1000)
 
 // scan element
@@ -23,28 +22,47 @@ function scanElement(pos1,pos2){
 
 const hr = document.getElementById('scanner')
 const headerhr = document.getElementById('header-hr')
+const subheader = document.getElementById('subheader');
 const header = document.querySelector('header')
 let intros = document.querySelectorAll('.para')
 let mouseparas = document.querySelectorAll('.mouse-pos-para')
+
+intros.forEach((int,idx)=>{
+    // console.log(int)
+    let parent = int.parentElement;
+        parent.classList.add('justify-center')
+    
+    // if(idx === intros.length - 1 || idx === 0){
+    //     parent.classList.remove('justify-start')
+    //     parent.classList.add('justify-center')
+    // } else {
+    //     parent.classList.add('justify-start')
+    //     parent.classList.remove('justify-center')
+    // }
+})
 /*  ------------------------------------------------------ window onscroll ------------------------------------------------------ */
 let scrollTop = document.body.scrollTop
-window.onscroll = (e) => {
+let currentTarget;
 
-// if window top is gt 0
-console.log(scrollTop)
-console.log(scrollY)
+window.onscroll = () => {
+
+// console.log(scrollTop)
+// console.log(scrollY)
 
 if(scrollY === scrollTop){
-    headerhr.style.top = 170 + "px"
-    console.log("Absolute top")
+    headerhr.style.top = 173 + "px"
+    // header.style.backgroundImage = 'linear-gradient(transparent,transparent)';
+    // console.log("Absolute top")
     header.classList.remove('bg-black')
+    header.style.background = 'transparent'
     header.classList.add('absolute')
     header.classList.remove('fixed')
 }
 if(scrollY > scrollTop){
-    headerhr.style.top = 200 + "px"
+    headerhr.style.top = subheader.getBoundingClientRect().y + subheader.clientHeight + 5 + "px"
+    // header.style.backgroundImage = 'linear-gradient(#000,transparent 99%)';
+    // console.log("Fixed Top")
     header.classList.add('bg-black')
-    console.log("Fixed Top")
     header.classList.add('fixed')
     header.classList.remove('absolute')
 }
@@ -53,10 +71,12 @@ for(let i = 0; i < intros.length; i++){
     let ypos = intros[i].getBoundingClientRect().y;
     let bottomypos = ypos + intros[i].clientHeight;
     let hrpos = hr.getBoundingClientRect().y
-    let headerhrpos = headerhr.getBoundingClientRect().y + 150
+    let headerhrpos = headerhr.getBoundingClientRect().y + 75
     // scanning between scanner-hr & top element - DOWN
     if(intros[i].classList.contains('hidden')){
         if(scanElement(hrpos,ypos)){
+            currentTarget = i;
+            intros[i].classList.add('isscanned')
             intros[i].classList.remove('hidden')
             intros[i].classList.add('appear')
         }
@@ -90,31 +110,31 @@ if(window.innerWidth > 870){
     window.addEventListener('click',clickTarget)
 }
 
-    let tip1 = document.createElement('hr')
-    let tip2 = document.createElement('hr') 
-    let tip3 = document.createElement('hr') 
-    let tip4 = document.createElement('hr') 
+let tip1 = document.createElement('hr')
+let tip2 = document.createElement('hr') 
+let tip3 = document.createElement('hr') 
+let tip4 = document.createElement('hr') 
 
-    tip1.classList.add('hr-tip')
-    tip2.classList.add('hr-tip')
-    tip3.classList.add('hr-tip')
-    tip4.classList.add('hr-tip')
+tip1.classList.add('hr-tip')
+tip2.classList.add('hr-tip')
+tip3.classList.add('hr-tip')
+tip4.classList.add('hr-tip')
 
-    tip1.classList.add('tip1')
-    tip2.classList.add('tip2')
-    tip3.classList.add('tip3')
-    tip4.classList.add('tip4')
+tip1.classList.add('tip1')
+tip2.classList.add('tip2')
+tip3.classList.add('tip3')
+tip4.classList.add('tip4')
 
 
-    tip1.classList.add('no-pointer')
-    tip2.classList.add('no-pointer')
-    tip3.classList.add('no-pointer')
-    tip4.classList.add('no-pointer')
+tip1.classList.add('no-pointer')
+tip2.classList.add('no-pointer')
+tip3.classList.add('no-pointer')
+tip4.classList.add('no-pointer')
 
-    document.body.append(tip1)
-    document.body.append(tip2)
-    document.body.append(tip3)
-    document.body.append(tip4)
+document.body.append(tip1)
+document.body.append(tip2)
+document.body.append(tip3)
+document.body.append(tip4)
 
 
 function mousemoveEvent(e){
@@ -134,7 +154,6 @@ function mousemoveEvent(e){
     tip4.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip4.classList.add('hr-active-tip4')
 }
-
 function clickTarget(e){
         let pos = {x:e.pageX||e.changedTouches[0]['clientX'],y:e.pageY||e.changedTouches[0]['clientY']}
     tip1.style.left = pos.x + "px"

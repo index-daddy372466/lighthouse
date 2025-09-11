@@ -11,7 +11,7 @@ msg:{
 <template>
 <!-- footer -->
     <footer id="footer" class="footer-main main-footer">
-    <a href="/" id="title-container" class="footer-title">
+    <a href="#" id="title-container" class="footer-title">
         <img id="logo-footer" draggable="false" src="../assets/media/lh-white.png" class="scale-out" alt="image of lighthouse" height="100" width="100"> 
      </a>
      <div id="title-container">

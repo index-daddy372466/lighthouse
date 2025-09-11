@@ -17,8 +17,8 @@ let props = defineProps({
 
 <template>
     <div id="current-time-container">
-        <p id="date-label" class="align-right border-btm-sm">{{ date }}</p>
-        <p id="time-label" class="align-right border-btm-sm">{{ time }}</p>
+        Date:<p id="date-label" class="align-right border-btm-sm">{{ date }}</p>
+        Time:<p id="time-label" class="align-right border-btm-sm">{{ time }}</p>
     </div>
 </template>
 

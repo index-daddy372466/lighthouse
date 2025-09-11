@@ -36,6 +36,9 @@
   --section-gap: 160px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
@@ -56,6 +59,7 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+  font-family: Helvetica, sans-serif
 }
 
 body {

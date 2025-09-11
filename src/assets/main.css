@@ -30,7 +30,15 @@ header{
   image-rendering: crisp-edges;
   transition: .25s;
 }
-
+.justify-end{
+    justify-content: end;
+}
+.justify-start{
+    justify-content: start;
+}
+.justify-center{
+    justify-content: center;
+}
 #logo{
   position:fixed;
   left:25px;
@@ -69,21 +77,19 @@ header{
 .bg-black{
   background-image:linear-gradient(#000,transparent 99%) !important;
 }
-#subheader{
-  transform:translate(0,50px);
-}
+
 #header-hr{
   width:100%;
   position:fixed;
   left:0;
   transition:.25s;
-  top:170px;
+  top:173px;
 }
 
 .hr-tip{
   /* background:#fff; */
   position: fixed;
-  border:1.5px dotted ghostwhite;
+  border:1.5px dotted rgba(248, 248, 255, 0.377);
 }
 .no-pointer{
   pointer-events: none;
@@ -108,19 +114,23 @@ height:0;
   width:0;
 }
 .hr-active-tip1{
-  height:10%;
-  top:0;
+  height:.5%;
+  /* height:10%; */
+  top:5px;
 }
 .hr-active-tip2{
-width:10%;
+width:.5%;
+/* width:10%; */
 left:0;
 }
 .hr-active-tip3{
-height:10%;
+height:.5%;
+/* height:10%; */
 bottom:0;
 }
 .hr-active-tip4{
-width:10%;
+width:.5%;
+/* width:10%; */
 right:0;
 }
 .hr-active-tip1-ext{
@@ -152,11 +162,7 @@ a,
 #title-container>h1{
   font-size:80px;
 }
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
+
 
 @media screen and (max-width:870px){
   #title-container>h1{
@@ -173,10 +179,12 @@ a,
   }
 
   #para-id{
-    font-size:11pt;
+    font-size:11pt !important;
   }
+#para-container{
+  width:100%;
+}
 
-  
 }
 
 

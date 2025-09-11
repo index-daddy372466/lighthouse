@@ -6,7 +6,7 @@ defineProps({})
 const today = new Date()
 const formattedDate = ref(today.toISOString().slice(0,10))
 
-let formattedTime = ref(today.toTimeString().slice(0,12))
+let formattedTime = ref(today.toTimeString().slice(0,9))
 
 </script>
 
@@ -30,8 +30,9 @@ let formattedTime = ref(today.toTimeString().slice(0,12))
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    gap:.5rem;
+    gap:2px;
     transition:.5s;
+    z-index:999;
 }
 @media screen and (max-width:650px){
     #stats-container{
