@@ -175,6 +175,7 @@ a,
   .green{
     transform:translate(100px,0);
     margin-left:unset !important;
+    margin-right: 2rem;
     text-align:center;
   }
 
