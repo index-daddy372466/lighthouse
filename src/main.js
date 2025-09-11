@@ -89,7 +89,7 @@ window.addEventListener('click',clickTarget)
 
 
 function mousemoveEvent(e){
-        let pos = {x:e.pageX||e.changedTouches[0]['clientX'],y:(e.pageY||e.changedTouches[0]['clientY'])}
+        let pos = {x:(e.pageX||Math.floor(e.changedTouches[0]['clientX'])),y:(e.pageY||Math.floor(e.changedTouches[0]['clientY']))}
     // update mouse para information (top right page)
     mouseparas.forEach(para => {
         if(para.id==='posX') para.textContent = 'X: ' + pos.x
