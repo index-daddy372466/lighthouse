@@ -106,7 +106,7 @@ console.log(dynamicBg.value)
     animation: disappearelement .25s ease-out;
 }
 .appear{
-    animation: appearelement .75s ease-out;
+    animation: appearelement 1s .75s ease-out;
 }
 .vh-100{
     min-height: 100vh;

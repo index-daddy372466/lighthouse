@@ -197,10 +197,10 @@ a,
     line-height:1rem !important;
     transform:translate(0,150px) !important;
   }
-#section-container{
-  width:100%;
-  background-size:33% !important;
-}
+  #section-container{
+    width:100%;
+    background-size:33% !important;
+  }
 
 }
 
