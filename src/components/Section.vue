@@ -82,6 +82,7 @@ console.log(dynamicBg.value)
     height:500px;
 }
 #para-id{
+    max-width:500px;
     box-shadow:.25rem .25rem 10px .9px #2c3e509b;
     border-bottom:.25px solid rgb(255, 255, 255);
     padding:.5rem;
