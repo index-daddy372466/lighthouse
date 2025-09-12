@@ -10,7 +10,7 @@ const props = defineProps({
         required:false
     }
 })
-
+// add dynamic background by language
 let dynamicBg = computed(()=>{
     return new URL(`/src/assets/media/languages/${props.lang}.png`,import.meta.url).href
 })
@@ -20,7 +20,12 @@ console.log(dynamicBg.value)
 
 
 <template>
-    <div id="para-container" class=" into-bg vh-100" :style="{backgroundImage: `url('${dynamicBg}')`,backgroundRepeat:`no-repeat`,backgroundSize:`contain`,backgroundPosition:`center`}">
+    <div id="section-container" class=" into-bg vh-100" :style="{
+        backgroundImage: `url('${dynamicBg}')`,
+        backgroundRepeat:`no-repeat`,
+        backgroundSize:`66%`,
+        backgroundPosition:`center 498px`,
+        }">
         <p id="para-id" class="para hidden">{{ msg }}</p>
     </div>
 </template>
@@ -28,15 +33,47 @@ console.log(dynamicBg.value)
 
 <style scope>
 
-#para-container{
+#section-container{
     /* transform:translate(0,100%); */
     min-width:300px;
     max-width:500px;
     /* border:2px solid red; */
-    background:transparent;
     display:flex;
     flex-direction: column;
     align-items: center;
+    opacity:0;
+}
+.bg-move{
+    animation: bgmove .65s forwards ease-in;
+}
+@keyframes bgmove {
+
+    from{
+        background-position:center 498px;
+        opacity:0;
+
+    }
+    to{
+        background-position:280px 450px;
+        opacity:1;
+    }
+    
+}
+.bg-original{
+    animation: bgoriginal .2s forwards ease-in;
+}
+@keyframes bgoriginal {
+
+    from{
+        background-position:280px 450px;
+        opacity:1;
+
+    }
+    to{
+        background-position:center 498px;
+        opacity:0;
+    }
+    
 }
 #background-container{
     width:100%;

@@ -165,6 +165,9 @@ a,
 
 
 @media screen and (max-width:870px){
+  #wrapper{
+    align-items: center !important;
+  }
   #title-container>h1{
   font-size:35px;
   }
@@ -182,7 +185,7 @@ a,
   #para-id{
     font-size:11pt !important;
   }
-#para-container{
+#Section-container{
   width:100%;
 }
 

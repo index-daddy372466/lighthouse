@@ -79,6 +79,8 @@ for(let i = 0; i < intros.length; i++){
             intros[i].classList.add('isscanned')
             intros[i].classList.remove('hidden')
             intros[i].classList.add('appear')
+            intros[i].parentElement.classList.add('bg-move')
+            intros[i].parentElement.classList.remove('bg-original')
         }
     }
     // scanning between header-hr & bottom element - DOWN
@@ -86,6 +88,9 @@ for(let i = 0; i < intros.length; i++){
             intros[i].classList.remove('hidden')
             intros[i].classList.remove('appear')
             intros[i].classList.add('disappear')
+            intros[i].parentElement.classList.add('bg-original')
+            intros[i].parentElement.classList.remove('bg-move')
+
     }
 
     // scanning between header-hr & bottom element - UP
