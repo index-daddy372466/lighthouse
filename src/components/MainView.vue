@@ -22,12 +22,13 @@ defineProps({
  <div id="wrapper">
     
     <!-- intro -->
-    <Pararaph lang="html" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci."/>
-    <Pararaph lang="css" msg="facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Pararaph lang="js" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
+    <Pararaph lang="mongodb" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci."/>
+    <Pararaph lang="mysql" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci.isicing elit. Porro ab voluptate ullam, inventore"/>
+    <Pararaph lang="psql" msg="facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
+    <Pararaph lang="javascript" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Pararaph lang="react" msg="perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Pararaph lang="vue" msg="Lorem ipsum dolor sit amet consectetur  facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Pararaph lang="node" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat ut atque repudiandae non sunt saepe repellendus magnam, aut reiciendis consequuntur natus animi enim eius earum architecto, odio quasi dolore fugiat! Iste id quisquam enim optio labore est molestiae sunt. Porro ullam a consectetur perspiciatis minus velit distinctio, odio optio laborum neque quidem exercitationem doloremque iusto esse molestiae dicta aut recusandae sapiente, incidunt officiis adipisci repudiandae nostrum atque quos! Unde natus aliquam, laudantium voluptatem optio, ducimus in illo labore fuga autem nesciunt, sint dicta. Voluptate ad nostrum excepturi dolore explicabo. Nemo ducimus delectus deleniti incidunt et consectetur, aspernatur nisi nam."/>
+    <Pararaph lang="nodejs" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat ut atque repudiandae non sunt saepe repellendus magnam, aut reiciendis consequuntur natus animi enim eius earum architecto, odio quasi dolore fugiat! Iste id quisquam enim optio labore est molestiae sunt. Porro ullam a consectetur perspiciatis minus velit distinctio, odio optio laborum neque quidem exercitationem doloremque iusto esse molestiae dicta aut recusandae sapiente, incidunt officiis adipisci repudiandae nostrum atque quos! Unde natus aliquam, laudantium voluptatem optio, ducimus in illo labore fuga autem nesciunt, sint dicta. Voluptate ad nostrum excepturi dolore explicabo. Nemo ducimus delectus deleniti incidunt et consectetur, aspernatur nisi nam."/>
     <!-- footer -->
     <Footer />
  </div>
