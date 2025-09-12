@@ -140,7 +140,8 @@ document.body.append(tip4)
 function mousemoveEvent(e){
         let pos = {x:(e.pageX||Math.floor(e.changedTouches[0]['clientX'])),y:(e.pageY||Math.floor(e.changedTouches[0]['clientY']))}
     // update mouse para information (top right page)
-    mouseparas.forEach(para => {
+    if(pos.y > headerhr.getBoundingClientRect().y){
+        mouseparas.forEach(para => {
         if(para.id==='posX') para.textContent = 'X: ' + pos.x
         if(para.id==='posY') para.textContent = 'Y: ' + pos.y
     })
@@ -153,10 +154,12 @@ function mousemoveEvent(e){
     tip3.classList.add('hr-active-tip3')
     tip4.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip4.classList.add('hr-active-tip4')
+    }
 }
 function clickTarget(e){
-        let pos = {x:e.pageX||e.changedTouches[0]['clientX'],y:e.pageY||e.changedTouches[0]['clientY']}
-    tip1.style.left = pos.x + "px"
+    let pos = {x:e.pageX||e.changedTouches[0]['clientX'],y:e.pageY||e.changedTouches[0]['clientY']}
+    if(pos.y > headerhr.getBoundingClientRect().y){
+        tip1.style.left = pos.x + "px"
     tip1.classList.toggle('hr-active-tip1-ext')
     tip2.style.top = (e.clientY||e.changedTouches[0]['clientY']) + "px"
     tip2.classList.toggle('hr-active-tip2-ext')
@@ -178,6 +181,7 @@ function clickTarget(e){
         tip4.style.top = e.clientY + "px"
 
     },250)
+    }
 }
 
 // window on mousemove end

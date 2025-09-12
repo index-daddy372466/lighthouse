@@ -16,7 +16,7 @@ let bg = document.getElementById('para-id')
 
 
 <template>
-    <div id="para-container" class="vh-100 into-bg">
+    <div id="para-container" class=" into-bg vh-100">
         <p id="para-id" class="para hidden">{{ msg }}</p>
     </div>
 </template>
