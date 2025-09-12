@@ -43,14 +43,19 @@ intros.forEach((int,idx)=>{
 /*  ------------------------------------------------------ window onscroll ------------------------------------------------------ */
 let scrollTop = document.body.scrollTop
 let currentTarget;
+let initialheaderhr = headerhr.getBoundingClientRect().y
 
+window.onresize = () => {
+    initialheaderhr = window.innerWidth > 870 ? 173 : 125
+    headerhr.style.top = initialheaderhr + "px"
+}
 window.onscroll = () => {
 
 // console.log(scrollTop)
 // console.log(scrollY)
 
 if(scrollY === scrollTop){
-    headerhr.style.top = 173 + "px"
+    headerhr.style.top = initialheaderhr + "px"
     // header.style.backgroundImage = 'linear-gradient(transparent,transparent)';
     // console.log("Absolute top")
     header.classList.remove('bg-black')

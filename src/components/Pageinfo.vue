@@ -34,7 +34,7 @@ let formattedTime = ref(today.toTimeString().slice(0,9))
     transition:.5s;
     z-index:999;
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:967px){
     #stats-container{
         top:0;
         width:100%;

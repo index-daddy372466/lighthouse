@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      showPos: window.innerWidth > 870
+      showPos: window.innerWidth > 967
     };
   }
 }

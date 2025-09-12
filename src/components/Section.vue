@@ -51,13 +51,11 @@ console.log(dynamicBg.value)
     from{
         background-position:center 498px;
         opacity:0;
-
     }
     to{
         background-position:66% 75%;
         opacity:1;
     }
-    
 }
 .bg-original{
     animation: bgoriginal .2s forwards ease-in;
