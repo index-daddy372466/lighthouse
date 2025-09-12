@@ -54,7 +54,7 @@ console.log(dynamicBg.value)
 
     }
     to{
-        background-position:280px 450px;
+        background-position:66% 75%;
         opacity:1;
     }
     
@@ -65,7 +65,7 @@ console.log(dynamicBg.value)
 @keyframes bgoriginal {
 
     from{
-        background-position:280px 450px;
+        background-position:66% 75%;
         opacity:1;
 
     }
