@@ -67,7 +67,7 @@ header{
   to{
     transform:scale(1.15);
   }
-  
+
 }
 .bg-trans{
   background-image:transparent !important;
@@ -160,6 +160,7 @@ a,
   font-size:80px;
 }
 
+/* landscape mobile */
 @media screen and (max-width:967px) and (max-height:500px){
  #header-container{
     align-items: center;
@@ -195,8 +196,9 @@ a,
     transform:translate(0,150px) !important;
   }
   #section-container{
+    border:4px solid purple;
     width:100%;
-    background-size:33% !important;
+    background-size:15% !important;
   }
 
 }

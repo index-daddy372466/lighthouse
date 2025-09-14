@@ -28,11 +28,11 @@ const header = document.querySelector('header')
 let intros = document.querySelectorAll('.para')
 let mouseparas = document.querySelectorAll('.mouse-pos-para')
 
-intros.forEach((int,idx)=>{
+intros.forEach((int)=>{
     // console.log(int)
     let parent = int.parentElement;
         parent.classList.add('justify-center')
-    
+
     // if(idx === intros.length - 1 || idx === 0){
     //     parent.classList.remove('justify-start')
     //     parent.classList.add('justify-center')
@@ -42,7 +42,7 @@ intros.forEach((int,idx)=>{
     // }
 })
 /*  ------------------------------------------------------ window onscroll ------------------------------------------------------ */
-let scrollTop = document.body.scrollTop
+let scrollTop = document.body.scrollTop;
 let currentTarget;
 let initialheaderhr = headerhr.getBoundingClientRect().y
 
@@ -122,9 +122,9 @@ if(window.innerWidth > 870){
 }
 
 let tip1 = document.createElement('hr')
-let tip2 = document.createElement('hr') 
-let tip3 = document.createElement('hr') 
-let tip4 = document.createElement('hr') 
+let tip2 = document.createElement('hr')
+let tip3 = document.createElement('hr')
+let tip4 = document.createElement('hr')
 
 tip1.classList.add('hr-tip')
 tip2.classList.add('hr-tip')
