@@ -1,0 +1,26 @@
+{
+    "snake":{
+        "name":"Classic Snake",
+        "lang":["js","html","css"],
+        "description":"Classic Snake Game",
+        "href":"#"
+    },
+        "mancala":{
+        "name":"Mancala",
+        "lang":["js","html","css"],
+        "description":"Classic Mancala Game",
+        "href":"#"
+    },
+    "encryption":{
+        "name":"Encryption Playground",
+        "lang":["js","html","css","nodeJS"],
+        "description":"Understanding the basics of Key encryption",
+        "href":"#"
+    },
+    "calculator":{
+        "name":"Basic Calculator",
+        "lang":["js","html","css"],
+        "description":"Basic Calculator",
+        "href":"https://kylestech95.github.io/calculator-ks"
+    }
+}

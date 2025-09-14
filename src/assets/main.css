@@ -1,7 +1,5 @@
 @import './base.css';
-:root{
-  --col-primary:hsla(160, 100%, 37%, 1);
-}
+
 #app {
   width:100%;
   margin: 0 auto;
@@ -155,7 +153,6 @@ right:0;
 a,
 .green {
   text-decoration: none;
-  color: var(--col-primary);
   transition: 0.4s;
   margin-left:50px;
 }
@@ -209,6 +206,7 @@ a,
   #section-container{
   width:100%;
   background-size:50% !important;
+  flex-direction: column !important;
 }
   #header-container{
     align-items: center;

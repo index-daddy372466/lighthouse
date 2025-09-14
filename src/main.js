@@ -1,6 +1,7 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
+import { setRandomPosition } from './assets/func/tools'
 /*------------------------ mount app ------------------------ */
 createApp(App).mount('#app')
 /*------------------------ mount app ------------------------ */
@@ -196,3 +197,13 @@ function clickTarget(e){
 
 // window on mousemove end
 /*  ------------------------------------------------------ window onmosuemove onclick ------------------------------------------------------ */
+
+
+/*  ------------------------------------------------------ application-container ------------------------------------------------------ */
+const appcontainer = document.querySelectorAll('#app-container')
+console.log(appcontainer)
+for(let j = 0; j < appcontainer.length; j++){
+    let items = [...appcontainer[j].children];
+    console.log(items);
+}
+/*  ------------------------------------------------------ application-container ------------------------------------------------------ */

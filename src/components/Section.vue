@@ -1,21 +1,29 @@
 <script setup>
 import { computed } from 'vue';
+import Applications from './Applications.vue';
+import { ref } from 'vue';
+
 const props = defineProps({
     msg:{
         type:String,
         required:true
     },
-    lang:{
+    bgImage:{
         type:String,
         required:false
+    },
+    proData:{
+        type:Object,
+        required:false,
     }
 })
 // add dynamic background by language
 let dynamicBg = computed(()=>{
-    return new URL(`/src/assets/media/languages/${props.lang}.png`,import.meta.url).href
+    return new URL(`/src/assets/media/backgrounds/${props.bgImage}.png`,import.meta.url).href
 })
-console.log(dynamicBg.value)
 
+// pass project data to app data
+let appData = ref(props.proData)
 </script>
 
 
@@ -23,26 +31,36 @@ console.log(dynamicBg.value)
     <div id="section-container" class=" into-bg vh-100" :style="{
         backgroundImage: `url('${dynamicBg}')`,
         backgroundRepeat:`no-repeat`,
-        backgroundSize:`66%`,
+        backgroundSize:`46%`,
         backgroundPosition:`center 498px`,
         }">
         <p id="para-id" class="para hidden">{{ msg }}</p>
+
+        <!-- app container -->
+         <div v-if="props.proData" id="app-container">
+            <Applications :app-data="appData"/>
+        </div>
     </div>
 </template>
 
 
 <style scope>
-
+#app-container{
+    height:100%;
+    width:350px;
+    /* border:2px solid red; */
+}
 #section-container{
     /* transform:translate(0,100%); */
-    min-width:300px;
-    max-width:500px;
-    /* border:2px solid red; */
+    /* border:2px solid rgb(0, 255, 89); */
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap:1.25rem;
     opacity:0;
 }
+
 .bg-move{
     animation: bgmove .65s forwards ease-in;
 }
@@ -76,7 +94,7 @@ console.log(dynamicBg.value)
 #background-container{
     width:100%;
     height:100%;
-    border:2px solid green;
+    /* border:2px solid green; */
     height:500px;
 }
 #para-id{
@@ -106,7 +124,7 @@ console.log(dynamicBg.value)
     animation: disappearelement .25s ease-out;
 }
 .appear{
-    animation: appearelement 1s .75s ease-out;
+    animation: appearelement .75s ease-out;
 }
 .vh-100{
     min-height: 100vh;
