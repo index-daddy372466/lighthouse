@@ -166,6 +166,10 @@ a,
  #header-container{
     align-items: center;
   }
+  #legend-container{
+  bottom:5px !important;
+  right:50px !important;
+}
   #subheader{
     margin-top:1rem;
   }
@@ -197,11 +201,11 @@ a,
     transform:translate(0,150px) !important;
   }
   .section-container{
-    width:100%;
+    width:75%;
     background-size:33% !important;
+    gap:0 !important;
   }
   #app-title{
-    color:red;
     top:125px !important;
   }
 
@@ -212,7 +216,8 @@ a,
 @media screen and (max-width:870px){
   #legend-container{
     height:300px !important;
-    bottom:25px !important;
+    bottom:50px !important;
+    right:50px !important;
     top:unset !important;
   }
   .section-container{
@@ -220,6 +225,7 @@ a,
   background-size:50% !important;
   flex-direction: column !important;
 }
+
   #header-container{
     align-items: center;
   }
