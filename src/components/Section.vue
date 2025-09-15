@@ -15,6 +15,10 @@ const props = defineProps({
     proData:{
         type:Object,
         required:false,
+    },
+    proName:{
+      type:String,
+      required:false
     }
 })
 // add dynamic background by language
@@ -34,6 +38,7 @@ let appData = ref(props.proData)
         backgroundSize:`46%`,
         backgroundPosition:`center 498px`,
         }">
+      <h3 id="app-title">{{ props.proName }}</h3>
         <p id="para-id" class="para hidden">{{ msg }}</p>
 
         <!-- app container -->
@@ -45,12 +50,22 @@ let appData = ref(props.proData)
 
 
 <style scope>
+
+#app-title{
+  font-weight: bold;
+  font-size:21pt;
+  position:absolute;
+  top:145px;
+  left:10px;
+
+}
 #app-container{
     height:100%;
     width:350px;
     /* border:2px solid red; */
 }
 #section-container{
+  position:relative;
     /* transform:translate(0,100%); */
     /* border:2px solid rgb(0, 255, 89); */
     display:flex;
@@ -89,7 +104,7 @@ let appData = ref(props.proData)
         background-position:center 498px;
         opacity:0;
     }
-    
+
 }
 #background-container{
     width:100%;
@@ -140,7 +155,7 @@ let appData = ref(props.proData)
 
         opacity:1;
     }
-    
+
 }
 @keyframes disappearelement {
     from{
@@ -149,7 +164,7 @@ let appData = ref(props.proData)
     to{
         opacity:0;
     }
-    
+
 }
 
 </style>

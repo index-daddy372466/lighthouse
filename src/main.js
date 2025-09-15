@@ -201,9 +201,8 @@ function clickTarget(e){
 
 /*  ------------------------------------------------------ application-container ------------------------------------------------------ */
 const appcontainer = document.querySelectorAll('#app-container')
-console.log(appcontainer)
 for(let j = 0; j < appcontainer.length; j++){
     let items = [...appcontainer[j].children];
-    console.log(items);
+    // console.log(items);
 }
 /*  ------------------------------------------------------ application-container ------------------------------------------------------ */

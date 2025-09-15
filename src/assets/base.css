@@ -63,7 +63,9 @@ html{
   font-weight: normal;
   font-family: Helvetica, sans-serif
 }
-
+#app-title{
+  color:var(--color-text);
+}
 /* header title */
 .green {
   color: var(--txt-adv-primary);
