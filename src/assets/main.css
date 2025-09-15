@@ -167,8 +167,9 @@ a,
     align-items: center;
   }
   #legend-container{
-  bottom:5px !important;
-  right:50px !important;
+  bottom:-10px !important;
+  right:40px !important;
+  height:250px !important;
 }
   #subheader{
     margin-top:1rem;
@@ -176,9 +177,7 @@ a,
   #header-hr{
     top:105px;
   }
-  #wrapper{
-    /* align-items: center !important; */
-  }
+
   #title-container>h1{
   font-size:35px;
   }
@@ -201,7 +200,7 @@ a,
     transform:translate(0,150px) !important;
   }
   .section-container{
-    width:75%;
+    transform:scale(.77) !important;
     background-size:33% !important;
     gap:0 !important;
   }
