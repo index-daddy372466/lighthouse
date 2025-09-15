@@ -1,7 +1,9 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import { setRandomPosition } from './assets/func/tools'
+import tools from './assets/projects.json';
+import { fitImageToDevice } from '@/assets/func/tools';
+
 /*------------------------ mount app ------------------------ */
 createApp(App).mount('#app')
 /*------------------------ mount app ------------------------ */
@@ -206,3 +208,54 @@ for(let j = 0; j < appcontainer.length; j++){
     // console.log(items);
 }
 /*  ------------------------------------------------------ application-container ------------------------------------------------------ */
+
+/*  ------------------------------------------------------ application title onclick ------------------------------------------------------ */
+const apptitles = document.querySelectorAll('#app-title');
+const applegend = document.getElementById('legend-container')
+apptitles.forEach(title=>{
+  const obj = pullObject(tools,title.textContent)||false;
+
+  // set height
+  title.style.height = (applegend.clientHeight / apptitles.length) + "px"
+  // onclick
+  title.onclick = e => {
+    // console.log(tools)
+    const target = e.currentTarget || e.target;
+    let text = target.textContent;
+
+    // pull object based on description/title
+    const object = pullObject(tools,text)||false;
+    console.log(object)
+    if(object===false){
+      console.log('nothing was pulled');
+    } else {
+      window.open(object.href, '_blank')
+    }
+
+  }
+  // create shortcut element
+  let shortcut = document.createElement('a');
+  // console.log(shortcut)
+  shortcut.classList.add('shortcut');
+  shortcut.href = `#${title.parentElement.id}`
+  applegend.appendChild(shortcut);
+})
+
+/*  ------------------------------------------------------ application title onclick ------------------------------------------------------ */
+
+
+
+function pullObject(obj,text){
+  // iterate through object
+  let target;
+  let description = 'description'
+  for(let i in obj){
+    // console.log(obj[i][description])
+    // console.log(text)
+    if(obj[i][description]===text){
+      // console.log(obj[i])
+      target = obj[i]
+    }
+  }
+  return target||false
+}

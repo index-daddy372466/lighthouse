@@ -54,7 +54,10 @@ html{
     --color-text: var(--vt-c-text-dark-2);
   }
 }
-
+.app-link{
+  background:var(--color-background);
+  color:var(--color-text);
+}
 *,
 *::before,
 *::after {
@@ -69,6 +72,9 @@ html{
 /* header title */
 .green {
   color: var(--txt-adv-primary);
+}
+.app-link{
+  color:var(--color-text)
 }
 body {
   /* border:2px solid red; */

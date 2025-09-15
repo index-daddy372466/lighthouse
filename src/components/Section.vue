@@ -19,52 +19,58 @@ const props = defineProps({
     proName:{
       type:String,
       required:false
+    },
+    id:{
+      type:String,
+      required:false,
     }
 })
+// console.log(props.id)
 // add dynamic background by language
 let dynamicBg = computed(()=>{
     return new URL(`/src/assets/media/backgrounds/${props.bgImage}.png`,import.meta.url).href
 })
-
 // pass project data to app data
 let appData = ref(props.proData)
 </script>
 
 
 <template>
-    <div id="section-container" class=" into-bg vh-100" :style="{
+    <div :id="props.id" class="section-container into-bg vh-100" :style="{
         backgroundImage: `url('${dynamicBg}')`,
         backgroundRepeat:`no-repeat`,
         backgroundSize:`46%`,
         backgroundPosition:`center 498px`,
         }">
-      <h3 id="app-title">{{ props.proName }}</h3>
-        <p id="para-id" class="para hidden">{{ msg }}</p>
+          <h3 id="app-title">{{ props.proName }}</h3>
+          <p id="para-id" class="para hidden">{{ msg }}</p>
 
-        <!-- app container -->
-         <div v-if="props.proData" id="app-container">
-            <Applications :app-data="appData"/>
-        </div>
+          <!-- app container -->
+          <div v-if="props.proData" id="app-container">
+              <Applications :app-data="appData"/>
+          </div>
     </div>
 </template>
 
 
 <style scope>
-
+#app-title:hover{
+  cursor:pointer;
+}
 #app-title{
   font-weight: bold;
   font-size:21pt;
   position:absolute;
-  top:145px;
+  top:195px;
   left:10px;
-
+  padding:.5rem;
 }
 #app-container{
     height:100%;
     width:350px;
     /* border:2px solid red; */
 }
-#section-container{
+.section-container{
   position:relative;
     /* transform:translate(0,100%); */
     /* border:2px solid rgb(0, 255, 89); */
@@ -72,7 +78,7 @@ let appData = ref(props.proData)
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:1.25rem;
+    gap:2.25rem;
     opacity:0;
 }
 

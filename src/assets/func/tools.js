@@ -36,3 +36,36 @@ export function setRandomPosition(itemElement, containerElement) {
     itemElement.style.left = randomX + 'px';
     itemElement.style.top = randomY + 'px';
 }
+
+// fit image to device
+export function fitImageToDevice(imageElement) {
+    const deviceWidth = window.innerWidth;
+    const deviceHeight = window.innerHeight;
+
+    const naturalWidth = imageElement.naturalWidth;
+    const naturalHeight = imageElement.naturalHeight;
+
+    if (!naturalWidth || !naturalHeight) {
+        console.warn("Image dimensions not available yet. Ensure image is loaded.");
+        return;
+    }
+
+    const imageAspectRatio = naturalWidth / naturalHeight;
+    const deviceAspectRatio = deviceWidth / deviceHeight;
+
+    let newWidth, newHeight;
+
+    if (imageAspectRatio > deviceAspectRatio) {
+        // Image is wider than the device, fit by width
+        newWidth = deviceWidth;
+        newHeight = deviceWidth / imageAspectRatio;
+    } else {
+        // Image is taller or same aspect ratio, fit by height
+        newHeight = deviceHeight;
+        newWidth = deviceHeight * imageAspectRatio;
+    }
+
+    imageElement.style.width = `${newWidth}px`;
+    imageElement.style.height = `${newHeight}px`;
+    imageElement.style.objectFit = 'contain'; // Ensures the image fits within the new dimensions without cropping
+}
