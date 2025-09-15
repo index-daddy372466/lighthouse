@@ -15,8 +15,8 @@ right:20px;
 bottom:175px;
 border-radius: 12px;
 /* bordeR:2px solid green; */
-border-right:1px solid hsla(160, 100%, 37%, 1);
-border-left:1px solid hsla(160, 100%, 37%, 1);
+/* border-right:1px solid hsla(160, 100%, 37%, 1); */
+/* border-left:1px solid hsla(160, 100%, 37%, 1); */
 width:35px;
 height: 350px;
 display:flex;
@@ -26,6 +26,9 @@ justify-content: space-evenly;
 overflow:hidden;
 gap:.25rem;
 z-index: 999;
+}
+.green-bg{
+  background:hsla(160, 100%, 37%, 1);
 }
 .shortcut:hover{
   background:hsla(160, 100%, 37%, 1);

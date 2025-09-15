@@ -81,8 +81,17 @@ for(let i = 0; i < intros.length; i++){
     let hrpos = hr.getBoundingClientRect().y
     let headerhrpos = headerhr.getBoundingClientRect().y + 75
     // scanning between scanner-hr & top element - DOWN
-    if(intros[i].classList.contains('hidden')){
         if(scanElement(hrpos,ypos)){
+          let currId = intros[i].parentElement.id;
+          console.log(currId)
+          if(currId){
+            // console.log([...applegend.children])
+            let legendarr = [...applegend.children]
+            legendarr.map(w => w.classList.remove('green-bg'))
+            let getLegend = legendarr.find(x=>x.hash==="#"+currId);
+            console.log(getLegend)
+            getLegend.classList.add('green-bg')
+          }
             currentTarget = i;
             intros[i].classList.add('isscanned')
             intros[i].classList.remove('hidden')
@@ -90,7 +99,6 @@ for(let i = 0; i < intros.length; i++){
             intros[i].parentElement.classList.add('bg-move')
             intros[i].parentElement.classList.remove('bg-original')
         }
-    }
     // scanning between header-hr & bottom element - DOWN
     if(scanElement(headerhrpos,bottomypos)){
             intros[i].classList.remove('hidden')
