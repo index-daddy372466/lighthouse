@@ -3,7 +3,7 @@
         "name":"Classic Snake",
         "lang":["js","html","css"],
         "description":"Classic Snake Game",
-        "href":"#"
+        "href":"https://kylestech95.github.io/snake-game/"
     },
         "mongo":{
         "name":"mongodb playground",

@@ -40,7 +40,7 @@ let gadgets = {
     <Section :pro-data="games.mancala" bgImage="mancala" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci.isicing elit. Porro ab voluptate ullam, inventore"/>
     <Section :pro-data="games.simon" bgImage="simon" msg="facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Section :pro-data="gadgets.encryption" bgImage="encryption" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Section bgImage="nodejs" msg="exercitationem doloremque iusto esse molestiae dicta aut recusandae sapiente, incidunt officiis adipisci repudiandae nostrum atque quos! Unde natus aliquam, laudantium voluptatem optio, ducimus in illo labore fuga autem nesciunt, sint dicta. Voluptate ad nostrum excepturi dolore explicabo. Nemo ducimus delectus deleniti incidunt et consectetur, aspernatur nisi nam."/>
+    <Section :pro-data="games.snake" bgImage="snake" msg="exercitationem doloremque iusto esse molestiae dicta aut recusandae sapiente, incidunt officiis adipisci repudiandae nostrum atque quos! Unde natus aliquam, laudantium voluptatem optio, ducimus in illo labore fuga autem nesciunt, sint dicta. Voluptate ad nostrum excepturi dolore explicabo. Nemo ducimus delectus deleniti incidunt et consectetur, aspernatur nisi nam."/>
     <!-- footer -->
     <Footer />
  </div>
