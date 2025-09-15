@@ -1,22 +1,19 @@
 <script setup>
-import { computed } from 'vue';
-const props = defineProps({
+defineProps({
     appData:{
         type:Object,
         required:false
     }
 })
-
-console.log(props.appData)
-
-
 </script>
 
 
 <template>
 
     <div class="app-item-link">
-
+      <p>{{ appData.name }}</p>
+      <!-- access href - vue style -->
+      <a target="_blank" :href="appData.href">{{ appData.href }}</a>
     </div>
 
 </template>

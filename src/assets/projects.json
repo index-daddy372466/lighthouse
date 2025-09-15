@@ -5,22 +5,34 @@
         "description":"Classic Snake Game",
         "href":"#"
     },
+        "mongo":{
+        "name":"mongodb playground",
+        "lang":["js","html","css","mongodb"],
+        "description":"Mongo Database Playground (CRUD)",
+        "href":"https://database-playground-fork.onrender.com"
+    },
         "mancala":{
         "name":"Mancala",
         "lang":["js","html","css"],
         "description":"Classic Mancala Game",
-        "href":"#"
+        "href":"https://kylestech95.github.io/mancala-game/"
     },
     "encryption":{
         "name":"Encryption Playground",
         "lang":["js","html","css","nodeJS"],
         "description":"Understanding the basics of Key encryption",
-        "href":"#"
+        "href":"https://key-encryption-playground.onrender.com"
     },
     "calculator":{
         "name":"Basic Calculator",
         "lang":["js","html","css"],
         "description":"Basic Calculator",
         "href":"https://kylestech95.github.io/calculator-ks"
+    },
+    "simon":{
+        "name":"Simon Says",
+        "lang":["ReactJS","js","html","css"],
+        "description":"Simon Says Game",
+        "href":"https://simon-says-reactjs.onrender.com/"
     }
 }
