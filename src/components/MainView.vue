@@ -35,9 +35,9 @@ let gadgets = {
     <!-- intro -->
 
     <Section bgImage="vue" msg="Welcome to the Litehouse, a lightweight portfolio made with the Vue framework. My name is Kyle, a web developer. As you scroll further, you may discover customized games, modules and ideas as well as it's source code. Collaborations and inquires are welcome!"/>
-    <Section :pro-data="gadgets.mongodb" bgImage="mongodb" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci."/>
-    <Section :pro-data="gadgets.calculator" bgImage="calculator" msg="perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
-    <Section :pro-data="games.mancala" bgImage="mancala" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci.isicing elit. Porro ab voluptate ullam, inventore"/>
+    <Section :pro-data="gadgets.mongodb" bgImage="mongodb" msg="A non-relational database programmed with the basic functions (Create, Read, Update, Delete) to increase practical & technical understanding."/>
+    <Section :pro-data="gadgets.calculator" bgImage="calculator" msg="A calculator that performs fundamental arithmetic operations, namely addition, subtraction, multiplication, and division"/>
+    <Section :pro-data="games.mancala" bgImage="marble" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, inventore commodi adipisci.isicing elit. Porro ab voluptate ullam, inventore"/>
     <Section :pro-data="games.simon" bgImage="simon" msg="facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Section :pro-data="gadgets.encryption" bgImage="encryption" msg="Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptate ullam, perspiciatis quidem facere repudiandae vero reiciendis eligendi inventore commodi adipisci delectus."/>
     <Section :pro-data="games.snake" bgImage="snake" msg="exercitationem doloremque iusto esse molestiae dicta aut recusandae sapiente, incidunt officiis adipisci repudiandae nostrum atque quos! Unde natus aliquam, laudantium voluptatem optio, ducimus in illo labore fuga autem nesciunt, sint dicta. Voluptate ad nostrum excepturi dolore explicabo. Nemo ducimus delectus deleniti incidunt et consectetur, aspernatur nisi nam."/>
