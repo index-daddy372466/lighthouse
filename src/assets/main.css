@@ -211,7 +211,9 @@ a,
 
 @media screen and (max-width:870px){
   #legend-container{
-    height:33% !important;
+    height:300px !important;
+    bottom:25px !important;
+    top:unset !important;
   }
   .section-container{
   width:100%;
