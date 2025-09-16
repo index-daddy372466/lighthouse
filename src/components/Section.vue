@@ -60,9 +60,9 @@ let appData = ref(props.proData)
 #app-title{
   font-weight: bold;
   font-size:21pt;
-  position:absolute;
-  top:195px;
-  left:10px;
+  /* position:absolute; */
+  /* top:195px;
+  left:10px; */
   padding:.5rem;
 }
 #app-container{
@@ -73,7 +73,7 @@ let appData = ref(props.proData)
 .section-container{
   position:relative;
     /* transform:translate(0,100%); */
-    /* border:2px solid rgb(0, 255, 89); */
+    border:2px solid rgb(0, 255, 89);
     display:flex;
     flex-direction: row;
     align-items: center;

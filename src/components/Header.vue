@@ -18,7 +18,7 @@ defineProps({
     <a href="#" id="lighthouse-logo">
       <img src="../assets/media/lh-green.png" alt="picture of lighthouse" id="logo" class="lighthouse lighhouse-png png-lighthouse scale-out" width="125" height="125">
     </a>
-    
+
 
     <div id="title-container">
       <h1 class="green">{{ msg }}</h1>
@@ -27,7 +27,7 @@ defineProps({
     <hr id="header-hr">
 
     <em id="subheader">{{ sub }}</em>
-  </div>  
+  </div>
 </template>
 
 <style scoped>
@@ -50,7 +50,7 @@ h3 {
   text-align: center;
 }
 #subheader{
-  transform:translate(0,50px);
+  transform:translate(-50px,50px);
 }
 @media (min-width: 1024px) {
   .greetings h1,

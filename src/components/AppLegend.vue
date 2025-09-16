@@ -11,14 +11,15 @@
 #legend-container{
 transition: .25s;
 position:fixed;
-right:20px;
-bottom:175px;
+right:0;
+top:50px;
 border-radius: 12px;
 /* bordeR:2px solid green; */
 /* border-right:1px solid hsla(160, 100%, 37%, 1); */
 /* border-left:1px solid hsla(160, 100%, 37%, 1); */
-width:35px;
-height: 350px;
+width:50px;
+/* height: 350px; */
+height: 95%;
 display:flex;
 flex-direction: column;
 align-items: center;
@@ -28,10 +29,10 @@ gap:.25rem;
 z-index: 999;
 }
 .green-bg{
-  background:hsla(160, 100%, 37%, 1);
+  background:rgba(0, 189, 126, 0.53);
 }
 .shortcut:hover{
-  background:hsla(160, 100%, 37%, 1);
+  background:rgba(0, 189, 126, 0.53)
 
 }
 .shortcut{
