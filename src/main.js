@@ -62,7 +62,7 @@ if(scrollY === scrollTop){
     // header.style.backgroundImage = 'linear-gradient(transparent,transparent)';
     // console.log("Absolute top")
     header.classList.remove('bg-black')
-    header.classList.remove('bg-custom')
+    // header.classList.remove('bg-custom')
     // header.style.background = 'transparent'
     header.classList.add('absolute')
     header.classList.remove('fixed')
@@ -73,7 +73,7 @@ if(scrollY > scrollTop){
     // header.style.backgroundImage = 'linear-gradient(#000,transparent 99%)';
     // console.log("Fixed Top")
     header.classList.add('bg-black')
-    header.classList.add('bg-custom')
+    // header.classList.add('bg-custom')
     header.classList.add('fixed')
     header.classList.remove('absolute')
 }
@@ -86,13 +86,11 @@ for(let i = 0; i < intros.length; i++){
     // scanning between scanner-hr & top element - DOWN
         if(scanElement(hrpos,ypos)){
           let currId = intros[i].parentElement.id;
-          console.log(currId)
           if(currId){
             // console.log([...applegend.children])
             let legendarr = [...applegend.children]
             legendarr.map(w => w.classList.remove('green-bg'))
             let getLegend = legendarr.find(x=>x.hash==="#"+currId);
-            console.log(getLegend)
             getLegend.classList.add('green-bg')
           }
             currentTarget = i;
@@ -223,20 +221,18 @@ for(let j = 0; j < appcontainer.length; j++){
 /*  ------------------------------------------------------ application title onclick ------------------------------------------------------ */
 const apptitles = document.querySelectorAll('#app-title');
 const applegend = document.getElementById('legend-container')
-apptitles.forEach(title=>{
+apptitles.forEach((title,idx)=>{
   const obj = pullObject(tools,title.textContent)||false;
 
   // set height
   title.style.height = (applegend.clientHeight / apptitles.length) + "px"
   // onclick
   title.onclick = e => {
-    // console.log(tools)
     const target = e.currentTarget || e.target;
     let text = target.textContent;
 
     // pull object based on description/title
     const object = pullObject(tools,text)||false;
-    console.log(object)
     if(object===false){
       console.log('nothing was pulled');
     } else {

@@ -35,7 +35,7 @@ defineProps({
 .app-link{
     border:2px solid #0f0;
     border-radius: 18px;
-  heighT:100%;
+  /* heighT:100%; */
   font-size:16pt;
   width:100%;
   text-align: center;

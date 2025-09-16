@@ -38,6 +38,6 @@ z-index: 999;
 .shortcut{
   width:100px;
   height:100%;
-  border-bottom:3px solid #000;
+  border-bottom:.75px solid #000;
 }
 </style>

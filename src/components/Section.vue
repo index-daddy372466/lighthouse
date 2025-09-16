@@ -36,19 +36,20 @@ let appData = ref(props.proData)
 
 
 <template>
-    <div :id="props.id" class="section-container into-bg vh-100" :style="{
+    <div :id="props.id" class="anchor section-container into-bg" :style="{
         backgroundImage: `url('${dynamicBg}')`,
         backgroundRepeat:`no-repeat`,
-        backgroundSize:`46%`,
+        backgroundSize:`36%`,
         backgroundPosition:`center 498px`,
         }">
           <h3 id="app-title">{{ props.proName }}</h3>
-          <p id="para-id" class="para hidden">{{ msg }}</p>
-
           <!-- app container -->
           <div v-if="props.proData" id="app-container">
               <Applications :app-data="appData"/>
           </div>
+          <p id="para-id" class="para hidden">{{ msg }}</p>
+
+
     </div>
 </template>
 
@@ -60,9 +61,9 @@ let appData = ref(props.proData)
 #app-title{
   font-weight: bold;
   font-size:21pt;
-  /* position:absolute; */
-  /* top:195px;
-  left:10px; */
+  position:absolute;
+  top:220px;
+  left:10px;
   padding:.5rem;
 }
 #app-container{
@@ -71,14 +72,14 @@ let appData = ref(props.proData)
     /* border:2px solid red; */
 }
 .section-container{
-  position:relative;
-    /* transform:translate(0,100%); */
-    /* border:2px solid rgb(0, 255, 89); */
+    height:100vh;
+    gap:1rem;
+    width:100%;
+    position:relative;
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap:2.25rem;
+    justify-content: space-evenly;
     opacity:0;
 }
 
@@ -149,6 +150,9 @@ let appData = ref(props.proData)
 }
 .vh-100{
     min-height: 100vh;
+}
+.vh-50{
+    min-height: 50vh;
 }
 
 @keyframes appearelement {
