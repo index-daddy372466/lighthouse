@@ -180,7 +180,7 @@ a,
   #legend-container{
   top:40px !important;
   height:90% !important;
-  right:0 !important;
+  right:40px !important;
 }
   #subheader{
     transform:translate(0,25px)!important;
