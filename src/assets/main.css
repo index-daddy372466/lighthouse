@@ -226,9 +226,13 @@ a,
     height:66vh !important;
   }
   #app-title{
-    top:125px !important;
+    top:105px !important;
   }
 
+  .app-link{
+  width:200px !important;
+  font-size:12pt !important;
+  }
 
 }
 
@@ -238,10 +242,11 @@ a,
     margin-top:4rem !important;
   }
   #legend-container{
-    right:0 !important;
+    right:25px !important;
   }
   #app-title{
     top:30px !important;
+    font-size:14pt !important;
   }
   .section-container{
   width:100%;
@@ -251,9 +256,10 @@ a,
   height:66vh !important;
 }
 .app-link{
-  /* position: absolute;
-  top:100px;
-  left:-50px; */
+  left:-30px !important;
+  position:absolute !important;
+  font-size:12pt !important;
+  width:200px !important;
 }
 
   #header-container{

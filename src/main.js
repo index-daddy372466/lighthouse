@@ -266,3 +266,12 @@ function pullObject(obj,text){
   }
   return target||false
 }
+
+
+/*  ------------------------------------------------------ onload ------------------------------------------------------ */
+window.onload = e => {
+    window.scrollTo(
+  document.documentElement.scrollWidth,
+  400
+);
+}
