@@ -73,7 +73,7 @@ let appData = ref(props.proData)
 .section-container{
   position:relative;
     /* transform:translate(0,100%); */
-    border:2px solid rgb(0, 255, 89);
+    /* border:2px solid rgb(0, 255, 89); */
     display:flex;
     flex-direction: row;
     align-items: center;

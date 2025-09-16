@@ -62,15 +62,18 @@ if(scrollY === scrollTop){
     // header.style.backgroundImage = 'linear-gradient(transparent,transparent)';
     // console.log("Absolute top")
     header.classList.remove('bg-black')
-    header.style.background = 'transparent'
+    header.classList.remove('bg-custom')
+    // header.style.background = 'transparent'
     header.classList.add('absolute')
     header.classList.remove('fixed')
 }
 if(scrollY > scrollTop){
+
     headerhr.style.top = subheader.getBoundingClientRect().y + subheader.clientHeight + 5 + "px"
     // header.style.backgroundImage = 'linear-gradient(#000,transparent 99%)';
     // console.log("Fixed Top")
     header.classList.add('bg-black')
+    header.classList.add('bg-custom')
     header.classList.add('fixed')
     header.classList.remove('absolute')
 }
