@@ -2,43 +2,57 @@
     "snake":{
         "name":"Classic Snake",
         "lang":["js","html","css"],
+        "type":"game",
         "description":"Classic Snake Game",
         "href":"https://kylestech95.github.io/snake-game/"
     },
         "mongo":{
         "name":"mongodb playground",
         "lang":["js","html","css","mongodb"],
+        "type":"gadget",
         "description":"Mongo Database Playground (CRUD)",
         "href":"https://database-playground-fork.onrender.com"
     },
         "mancala":{
         "name":"Mancala",
         "lang":["js","html","css"],
+        "type":"game",
         "description":"Classic Mancala Game",
         "href":"https://kylestech95.github.io/mancala-game/"
     },
     "encryption":{
         "name":"Encryption Playground",
         "lang":["js","html","css","nodeJS"],
+        "type":"gadget",
         "description":"Understanding the basics of Key encryption",
         "href":"https://key-encryption-playground.onrender.com"
     },
     "calculator":{
         "name":"Basic Calculator",
         "lang":["js","html","css"],
+        "type":"gadget",
         "description":"Basic Calculator",
         "href":"https://kylestech95.github.io/calculator-ks"
     },
     "simon":{
         "name":"Simon Says",
         "lang":["ReactJS","js","html","css"],
+        "type":"game",
         "description":"Simon Says Game",
         "href":"https://simon-says-reactjs.onrender.com/"
     },
     "filesystem":{
         "name":"File System",
         "lang":["nodeJS","express","js","html","css"],
+        "type":"gadget",
         "description":"Mock File system",
         "href":"https://kylestech95.github.io/fileuploader/"
+    },
+    "shaggy":{
+        "name":"Shaggy Secrets Front End Design",
+        "lang":["js","html","css"],
+        "type":"design",
+        "description":"Static web page, or landing page",
+        "href":"https://index-daddy372466.github.io/shaggy-secrets/"
     }
 }

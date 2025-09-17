@@ -275,3 +275,72 @@ window.onload = e => {
   400
 );
 }
+/*  ------------------------------------------------------ onload ------------------------------------------------------ */
+
+/*  ------------------------------------------------------ onkeydown ------------------------------------------------------ */
+// const shortcuts = [...document.querySelectorAll('.shortcut')]
+// let keytarget = 0
+
+// window.onkeydown = e => {
+//   let key = e.key;
+//   let arrowUp = (key==='ArrowUp'|| /ArrowUp/g.test(key));
+//   let arrowDown = (key==='ArrowDown'|| /ArrowDown/g.test(key));
+
+//   if(arrowUp || arrowDown){
+//     e.preventDefault()
+
+//     let split, section, gethref, href
+//     // scroll to the target
+//     if(arrowDown){
+//       keytarget+=1;
+//         // capture the section from href
+//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
+//         section = document.getElementById(href);
+//     }
+//     if(arrowUp){
+//       keytarget-=1
+//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
+//         section = document.getElementById(href);
+//     }
+//     console.log(section)
+//     window.scrollTo(0,section.getBoundingClientRect().y)
+  
+//     console.log(keytarget)
+//   }
+// }
+/*  ------------------------------------------------------ onkeydown ------------------------------------------------------ */
+
+// let keytarget = 0
+// function handleKeyDown(e){
+//   let key = e.key;
+//   let arrowUp = (key==='ArrowUp'|| /ArrowUp/g.test(key));
+//   let arrowDown = (key==='ArrowDown'|| /ArrowDown/g.test(key));
+
+//   if(arrowUp || arrowDown){
+//     e.preventDefault()
+//     // keytarget = shortcuts.indexOf(shortcuts.find(x=>x.classList.contains('green-bg')))||0
+//     keytarget = 0
+
+//     let split, section, gethref, href
+//     // scroll to the target
+//     if(arrowDown){
+//       keytarget+=1;
+//         // capture the section from href
+//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
+//         section = document.getElementById(href);
+//     }
+//     if(arrowUp){
+//       keytarget-=1
+//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
+//         section = document.getElementById(href);
+//     }
+//     console.log(section)
+//     window.scrollTo(0,section.getBoundingClientRect().y)
+  
+//     console.log(keytarget)
+//   }
+
+    
+// }
+
+

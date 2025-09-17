@@ -6,7 +6,7 @@ import Pageinfo from './Pageinfo.vue'
 import Header from './Header.vue';
 import { ref } from 'vue';
 import AppLegend from './AppLegend.vue';
-import {snake,encryption,mancala,calculator, simon, mongo, filesystem} from '../assets/projects.json'
+import {snake,encryption,mancala,calculator, simon, mongo, filesystem, shaggy} from '../assets/projects.json'
 
 let games = {
   snake:ref(snake),
@@ -19,6 +19,9 @@ let gadgets = {
   encryption:ref(encryption),
   mongodb:ref(mongo),
   filesystem:ref(filesystem)
+}
+let design = {
+  shaggy:ref(shaggy),
 }
 </script>
 
@@ -42,6 +45,7 @@ let gadgets = {
     <Section id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
     <Section id="mongodb" :pro-name="gadgets.mongodb.value.description" :pro-data="gadgets.mongodb.value" bgImage="mongodb" msg="A non-relational database programmed to increase understanding of the basic functions (Create, Read, Update, Delete)."/>
     <Section id="calculator" :pro-name="gadgets.calculator.value.description" :pro-data="gadgets.calculator" bgImage="calculator" msg="A calculator that performs fundamental arithmetic operations, namely addition, subtraction, multiplication, and division"/>
+    <Section id="shaggy" :pro-name="design.shaggy.value.description" :pro-data="design.shaggy" bgImage="shaggy" msg="A web solution where potential prospects can easily navigate through on desktop & mobile platforms. Key features include a responsive user interface and navigation adaptability."/>
     <Section id="mancala" :pro-name="games.mancala.value.description" :pro-data="games.mancala" bgImage="marble" msg="An ancient, two-player strategy board game played with small stones or seeds and a board with two rows of pits and two larger 'mancala' or store pits at the ends"/>
     <Section id="simon" :pro-name="games.simon.value.description" :pro-data="games.simon" bgImage="simon" msg="a round electronic device where players must repeat a sequence of lights and sounds."/>
     <Section id="encryption" :pro-name="gadgets.encryption.value.description" :pro-data="gadgets.encryption" bgImage="encryption" msg="A playground created to understand the basics around encrypting & signing data. This module includes but is not limited to symmetric/asymmetric encryption & creating signatures."/>

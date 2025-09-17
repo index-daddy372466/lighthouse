@@ -180,7 +180,7 @@ a,
   #legend-container{
   top:40px !important;
   height:90% !important;
-  right:40px !important;
+  right:50px !important;
 }
   #subheader{
     transform:translate(0,25px)!important;
@@ -236,7 +236,11 @@ a,
 
 }
 
-
+@media screen and (min-width:1010px) {
+  .section-container{
+    background-size:300px !important;
+  }
+}
 @media screen and (max-width:870px){
 #app-title{
     margin-top:4rem !important;
@@ -253,6 +257,7 @@ a,
   /* border:2px solid red; */
   background-size:50% !important;
   flex-direction: column !important;
+  align-items: start !important;
   height:66vh !important;
 }
 .app-link{
@@ -294,6 +299,7 @@ a,
 
   #para-id{
     font-size:11pt !important;
+    width:75%;
   }
 
 
