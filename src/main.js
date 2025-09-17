@@ -245,7 +245,7 @@ apptitles.forEach((title,idx)=>{
   let shortcut = document.createElement('a');
   // console.log(shortcut)
   shortcut.classList.add('shortcut');
-  shortcut.textContent = obj.name
+  shortcut.textContent = obj.name||'Welcome'
   shortcut.href = `#${title.parentElement.id}`
   applegend.appendChild(shortcut);
 })
