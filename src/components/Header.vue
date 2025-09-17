@@ -32,7 +32,7 @@ defineProps({
 
 <style scoped>
 #header-container{
-  z-index:998;
+  z-index:997;
 }
 h1 {
   font-weight: 500;

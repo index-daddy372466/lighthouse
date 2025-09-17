@@ -4,6 +4,11 @@ import Applications from './Applications.vue';
 import { ref } from 'vue';
 
 const props = defineProps({
+    
+    enabled:{
+        type:String,
+        required:true
+    },
     msg:{
         type:String,
         required:true
@@ -25,6 +30,7 @@ const props = defineProps({
       required:false,
     }
 })
+const propIsEnabled = (props.enabled === 'true' && props.enabled !== 'false')
 // console.log(props.id)
 // add dynamic background by language
 let dynamicBg = computed(()=>{
@@ -36,7 +42,7 @@ let appData = ref(props.proData)
 
 
 <template>
-    <div :id="props.id" class="anchor section-container into-bg" :style="{
+    <div v-if="propIsEnabled" :id="props.id" class="anchor section-container into-bg" :style="{
         backgroundImage: `url('${dynamicBg}')`,
         backgroundRepeat:`no-repeat`,
         backgroundSize:`36%`,
@@ -49,7 +55,7 @@ let appData = ref(props.proData)
           </div>
           <p id="para-id" class="para hidden">{{ msg }}</p>
     </div>
-    <hr id="section-hr">
+    <hr v-if="propIsEnabled" id="section-hr">
 </template>
 
 

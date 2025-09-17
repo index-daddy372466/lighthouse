@@ -29,7 +29,7 @@ const subheader = document.getElementById('subheader');
 const header = document.querySelector('header')
 let intros = document.querySelectorAll('.para')
 let mouseparas = document.querySelectorAll('.mouse-pos-para')
-
+let litehousetitle = document.querySelector('.green')
 intros.forEach((int)=>{
     // console.log(int)
     let parent = int.parentElement;
@@ -62,13 +62,14 @@ if(scrollY === scrollTop){
     // header.style.backgroundImage = 'linear-gradient(transparent,transparent)';
     // console.log("Absolute top")
     header.classList.remove('bg-black')
+    litehousetitle.classList.remove('black-bg-header')
     // header.classList.remove('bg-custom')
     // header.style.background = 'transparent'
     header.classList.add('absolute')
     header.classList.remove('fixed')
 }
 if(scrollY > scrollTop){
-
+    litehousetitle.classList.add('black-bg-header')
     headerhr.style.top = subheader.getBoundingClientRect().y + subheader.clientHeight + 5 + "px"
     // header.style.backgroundImage = 'linear-gradient(#000,transparent 99%)';
     // console.log("Fixed Top")
