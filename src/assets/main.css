@@ -13,6 +13,7 @@
   border-bottom:.25px solid ghostwhite;
   padding-bottom:2px;
 }
+
 header{
     width:100%;
     height:150px;
@@ -257,6 +258,7 @@ a,
   }
   #legend-container{
     right:25px !important;
+    width:100px !important;
   }
   #app-title{
     top:-20px !important;

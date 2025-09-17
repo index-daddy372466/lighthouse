@@ -113,3 +113,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   animation:shallowbg 10s ease-in-out normal infinite;
 }
+.shortcut{
+  color:var(--color-text);
+}

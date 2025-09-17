@@ -38,6 +38,11 @@ z-index: 999;
 .shortcut{
   width:100px;
   height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
   border-bottom:.75px solid #000;
+  font-size:8pt;
 }
 </style>
