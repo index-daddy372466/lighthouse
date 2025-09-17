@@ -186,7 +186,8 @@ a,
   #legend-container{
   top:40px !important;
   height:90% !important;
-  right:50px !important;
+  width:125px !important;
+  right:30px !important;
 }
   #subheader{
     transform:translate(0,25px)!important;
