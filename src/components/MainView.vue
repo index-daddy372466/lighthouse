@@ -49,7 +49,7 @@ let design = {
     <Section id="mancala" :pro-name="games.mancala.value.description" :pro-data="games.mancala" bgImage="marble" msg="An ancient, two-player strategy board game played with small stones or seeds and a board with two rows of pits and two larger 'mancala' or store pits at the ends"/>
     <Section id="simon" :pro-name="games.simon.value.description" :pro-data="games.simon" bgImage="simon" msg="a round electronic device where players must repeat a sequence of lights and sounds."/>
     <Section id="encryption" :pro-name="gadgets.encryption.value.description" :pro-data="gadgets.encryption" bgImage="encryption" msg="A playground created to understand the basics around encrypting & signing data. This module includes but is not limited to symmetric/asymmetric encryption & creating signatures."/>
-    <Section id="snake" :pro-name="games.snake.value.description" :pro-data="games.snake" bgImage="snake" msg="Classic snake game where you must survive and eat food without running into walls...yourself!"/>
+    <Section id="snake" :pro-name="games.snake.value.description" :pro-data="games.snake" bgImage="snake" msg="Classic snake game where you must survive eat food, and grow without running into walls...and yourself!"/>
     <!-- footer -->
     <Footer />
  </div>

@@ -59,7 +59,7 @@ header{
   display:flex;
   flex-direction: row;
   align-items: end;
-  justify-content: start;
+  justify-content: center;
 }
 .scale-out{
   animation: scaleout 5s ease infinite alternate;
@@ -201,6 +201,9 @@ a,
     top:4px;
     width:75px;
     height:75px;
+  }
+  #header-container{
+    justify-content: start;
   }
   .green{
     transform:translate(100px,0);
