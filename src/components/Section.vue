@@ -48,13 +48,19 @@ let appData = ref(props.proData)
               <Applications :app-data="appData"/>
           </div>
           <p id="para-id" class="para hidden">{{ msg }}</p>
-
-
     </div>
+    <hr id="section-hr">
 </template>
 
 
 <style scope>
+#section-hr{
+    width:75%;
+    height:1px;
+    /* background:rgb(0, 251, 255); */
+    background:#000;
+    border:none;
+}
 #app-title:hover{
   cursor:pointer;
 }
@@ -78,7 +84,7 @@ let appData = ref(props.proData)
     position:relative;
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-evenly;
     opacity:0;
 }
@@ -125,7 +131,7 @@ let appData = ref(props.proData)
     border-bottom:.25px solid rgb(255, 255, 255);
     padding:.5rem;
     border-radius: 12px;
-    background-image:linear-gradient(0deg,rgba(0, 189, 126, 0.275),transparent 70%);
+    background-image:linear-gradient(180deg,rgba(0, 189, 126, 0.697),#000 70%);
     filter: contrast(150%);
     line-height:1.5;
     text-indent: .25in;

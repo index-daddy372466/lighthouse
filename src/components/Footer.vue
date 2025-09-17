@@ -30,7 +30,7 @@ msg:{
 }
 #footer{
     background-image:linear-gradient(0,rgba(0, 189, 126, 0.793),transparent);
-    height:150px;
+    height:75px;
     width:100%;
     bottom:0;
     position:fixed;
