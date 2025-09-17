@@ -54,5 +54,12 @@
         "type":"design",
         "description":"Static web page, or landing page",
         "href":"https://index-daddy372466.github.io/shaggy-secrets/"
+    },
+    "todo":{
+        "name":"Todo List",
+        "lang":["c language", "gnu"],
+        "type":"gadget",
+        "description":"Todo List in command line",
+        "href":"https://github.com/KylesTech95/to-do"
     }
 }

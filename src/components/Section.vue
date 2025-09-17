@@ -63,12 +63,12 @@ let appData = ref(props.proData)
 #section-hr{
     width:75%;
     height:1px;
-    /* background:rgb(0, 251, 255); */
     background:#000;
     border:none;
 }
 #app-title:hover{
   cursor:pointer;
+  color:#f00;
 }
 #app-title{
   font-weight: bold;
@@ -77,6 +77,7 @@ let appData = ref(props.proData)
   top:220px;
   left:10px;
   padding:.5rem;
+transition:.25s;
 }
 #app-container{
     height:100%;

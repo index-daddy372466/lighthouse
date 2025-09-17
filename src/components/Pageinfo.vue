@@ -4,7 +4,7 @@ import CurrentTime from './CurrentTime.vue';
 import { ref } from 'vue';
 defineProps({})
 const today = new Date()
-const formattedDate = ref(today.toISOString().slice(0,10))
+let formattedDate = ref(today.toISOString().slice(0,10))
 
 let formattedTime = ref(today.toTimeString().slice(0,9))
 
