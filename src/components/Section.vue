@@ -6,7 +6,7 @@ import { ref } from 'vue';
 const props = defineProps({
     
     enabled:{
-        type:String,
+        type:Boolean,
         required:true
     },
     msg:{
@@ -30,7 +30,7 @@ const props = defineProps({
       required:false,
     }
 })
-const propIsEnabled = (props.enabled === 'true' && props.enabled !== 'false')
+const propIsEnabled = (props.enabled === true && props.enabled !== false)
 // console.log(props.id)
 // add dynamic background by language
 let dynamicBg = computed(()=>{
