@@ -12,14 +12,14 @@
 transition: .25s;
 position:fixed;
 right:0;
-top:50px;
+top:95px;
 border-radius: 12px;
 /* bordeR:2px solid green; */
 /* border-right:1px solid hsla(160, 100%, 37%, 1); */
 /* border-left:1px solid hsla(160, 100%, 37%, 1); */
 width:125px;
 /* height: 350px; */
-height: 95%;
+height: 80%;
 display:flex;
 flex-direction: column;
 align-items: center;
