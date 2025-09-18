@@ -6,12 +6,13 @@ import Pageinfo from './Pageinfo.vue'
 import Header from './Header.vue';
 import { ref } from 'vue';
 import AppLegend from './AppLegend.vue';
-import {snake,encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo} from '../assets/projects.json'
+import {snake,encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird} from '../assets/projects.json'
 
 let games = {
   snake:ref(snake),
   mancala:ref(mancala),
-  simon:ref(simon)
+  simon:ref(simon),
+  iriebird:ref(iriebird)
 }
 
 let gadgets = {
@@ -44,7 +45,8 @@ let design = {
 
     <Section enabled="true" id="welcome"  proName="Welcome" bgImage="vue" msg="Welcome to the Litehouse, a lightweight portfolio made with the Vue framework. My name is Kyle, a web developer. As you scroll further, you may discover customized games, modules and ideas as well as it's source code. Collaborations and inquires are welcome!"/>
     <Section enabled="true" id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
-    <Section enabled="true" id="mongodb" :pro-name="gadgets.mongodb.value.description" :pro-data="gadgets.mongodb.value" bgImage="mongodb" msg="A non-relational database programmed to increase understanding of the basic functions (Create, Read, Update, Delete)."/>
+    <Section enabled="true" id="iriebird" :pro-name="games.iriebird.value.description" :pro-data="games.iriebird.value" bgImage="iriebird" msg="A flappy-bird mock game with a carribean touch. Guide a bird through a series of moving green pipes by tapping the screen to make it flap its wings"/>
+    <Section enabled="true" id="iriebird" :pro-name="gadgets.mongodb.value.description" :pro-data="gadgets.mongodb.value" bgImage="mongodb" msg="A non-relational database programmed to increase understanding of the basic functions (Create, Read, Update, Delete)."/>
     <Section enabled="true" id="todo" :pro-name="gadgets.todo.value.description" :pro-data="gadgets.todo" bgImage="todo" msg="A todo list with all of it's basic functions. Clients should be able to create a todo, read it clearly, edit, and delete todos within the list."/>
     <Section enabled="true" id="calculator" :pro-name="gadgets.calculator.value.description" :pro-data="gadgets.calculator" bgImage="calculator" msg="A calculator that performs fundamental arithmetic operations, namely addition, subtraction, multiplication, and division"/>
     <Section enabled="true" id="shaggy" :pro-name="design.shaggy.value.description" :pro-data="design.shaggy" bgImage="shaggy" msg="A web solution where potential prospects can easily navigate through on desktop & mobile platforms. Key features include a responsive user interface and navigation adaptability."/>

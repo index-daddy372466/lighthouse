@@ -61,5 +61,12 @@
         "type":"gadget",
         "description":"Todo List in command line",
         "href":"https://github.com/KylesTech95/to-do"
+    },
+    "iriebird":{
+        "name":"IrieBird",
+        "lang":["js", "css","html"],
+        "type":"game",
+        "description":"Iriebird game",
+        "href":"https://kylestech95.github.io/nestjs-starter/"
     }
 }
