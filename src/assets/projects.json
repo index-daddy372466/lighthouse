@@ -68,5 +68,13 @@
         "type":"game",
         "description":"Iriebird game",
         "href":"https://kylestech95.github.io/nestjs-starter/"
+    },
+    "dimmerjs":{
+        "name":"DimmerJS",
+        "lang":["js", "css","html"],
+        "type":"gadget",
+        "description":"Content Dimmer",
+        "href":"https://kylestech95.github.io/nbl/"
     }
 }
+
