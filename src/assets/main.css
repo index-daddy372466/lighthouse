@@ -188,7 +188,7 @@ a,
     height:90px !important;
   }
   #legend-container{
-  height:70% !important;
+    top:100px !important;
   overflow-y:scroll !important;
   width:125px !important;
   right:30px !important;
@@ -262,7 +262,7 @@ a,
   #legend-container{
     right:25px !important;
     width:100px !important;
-    height:85% !important;
+    height:70% !important;
     overflow-y:scroll !important;
   }
   #app-title{

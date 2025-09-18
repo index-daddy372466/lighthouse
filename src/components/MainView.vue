@@ -24,7 +24,7 @@ let gadgets = {
   dimmerjs:ref(dimmerjs)
 }
 let design = {
-  shaggy:ref(shaggy),
+  shaggy:ref(shaggy)
 }
 </script>
 
