@@ -13,6 +13,13 @@
         "description":"Mongo Database Playground (CRUD)",
         "href":"https://database-playground-fork.onrender.com"
     },
+        "idogsit":{
+        "name":"idogsit",
+        "lang":["js","html","css"],
+        "type":"design",
+        "description":"Dog Sitting Website (Design)",
+        "href":"https://kylestech95.github.io/idogsit/"
+        },
         "mancala":{
         "name":"Mancala",
         "lang":["js","html","css"],
