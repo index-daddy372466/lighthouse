@@ -82,6 +82,13 @@
         "type":"gadget",
         "description":"Content Dimmer",
         "href":"https://kylestech95.github.io/nbl/"
+    },
+    "selectiontool":{
+        "name":"Selection Tool",
+        "lang":["reactJS", "css","html"],
+        "type":"design",
+        "description":"Tile Selection Tool",
+        "href":"https://kylestech95.github.io/tile-selection-tool-interactive/"
     }
 }
 
