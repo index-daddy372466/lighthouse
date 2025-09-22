@@ -76,6 +76,7 @@ let appData = ref(props.proData)
   position:absolute;
   top:250px;
   left:10px;
+  z-index:999;
   padding:.5rem;
 transition:.25s;
 }
