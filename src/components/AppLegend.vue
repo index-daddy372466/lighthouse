@@ -49,4 +49,10 @@ z-index: 999;
   font-size:8pt;
   transform:rotate(-2.5deg);
 }
+.no-selection {
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
 </style>
