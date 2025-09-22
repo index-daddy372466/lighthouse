@@ -4,7 +4,7 @@ import Applications from './Applications.vue';
 import { ref } from 'vue';
 
 const props = defineProps({
-    
+
     enabled:{
         type:Boolean,
         required:true
@@ -74,7 +74,7 @@ let appData = ref(props.proData)
   font-weight: bold;
   font-size:21pt;
   position:absolute;
-  top:220px;
+  top:250px;
   left:10px;
   padding:.5rem;
 transition:.25s;
@@ -90,8 +90,8 @@ transition:.25s;
     width:100%;
     position:relative;
     display:flex;
-    flex-direction: row;
-    align-items: end;
+    flex-direction: column;
+    align-items: self-start;
     justify-content: space-evenly;
     opacity:0;
 }

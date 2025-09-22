@@ -256,6 +256,9 @@ a,
   }
 }
 @media screen and (max-width:870px){
+.app-item-link{
+  transform:unset !important;
+}
 #app-title{
     margin-top:4rem !important;
   }
