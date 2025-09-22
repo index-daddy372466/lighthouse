@@ -178,6 +178,7 @@ a,
 
 /* landscape mobile */
 @media screen and (max-width:967px) and (max-height:500px){
+
  #header-container{
     align-items: center;
   }
@@ -240,7 +241,8 @@ a,
     height:66vh !important;
   }
   #app-title{
-    top:105px !important;
+    top:0 !important;
+    left:-50px !important;
   }
 
   .app-link{
