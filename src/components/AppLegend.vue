@@ -13,9 +13,8 @@ transition: .25s;
 position:fixed;
 right:0;
 top:175px;
-border-radius: 12px;
 /* bordeR:2px solid green; */
-/* border-right:1px solid hsla(160, 100%, 37%, 1); */
+/* border-left:1px solid hsla(160, 100%, 37%, 1); */
 /* border-left:1px solid hsla(160, 100%, 37%, 1); */
 width:125px;
 /* height: 350px; */

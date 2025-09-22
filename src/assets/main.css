@@ -178,7 +178,9 @@ a,
 
 /* landscape mobile */
 @media screen and (max-width:967px) and (max-height:500px){
-
+.shortcut{
+  width:166px !important;
+}
  #header-container{
     align-items: center;
   }
@@ -189,9 +191,10 @@ a,
     height:90px !important;
   }
   #legend-container{
+    /* border:2px solid red; */
     top:100px !important;
   overflow-y:scroll !important;
-  width:125px !important;
+  width:150px !important;
   right:30px !important;
 }
   #subheader{
@@ -271,7 +274,7 @@ a,
   }
   #legend-container{
     right:25px !important;
-    width:100px !important;
+    /* width:100px !important; */
     height:70% !important;
     overflow-y:scroll !important;
   }
