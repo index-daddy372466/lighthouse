@@ -36,7 +36,8 @@ console.log(props.appData.git)
 }
 .app-link:hover{
   color:hsla(160, 100%, 37%, 1);
-  letter-spacing:1.5px;
+  letter-spacing:1.25px;
+  transform:translateY(-2.5px);
 }
 .app-link{
     border-left:none;
@@ -67,7 +68,8 @@ console.log(props.appData.git)
 }
 .git-link:hover{
   color:rgb(223, 89, 228);
-  letter-spacing:1.5px;
+  letter-spacing:1.25px;
+  transform:translateY(5px);
 }
 
 </style>
