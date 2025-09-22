@@ -258,6 +258,11 @@ a,
   }
 }
 @media screen and (max-width:870px){
+.git-link{
+  position:absolute;
+  bottom:-2.5rem;
+  transform:translate(-110px,0);
+}
 .app-item-link{
   transform:unset !important;
 }

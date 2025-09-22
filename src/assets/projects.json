@@ -4,6 +4,7 @@
         "lang":["js","html","css"],
         "type":"game",
         "description":"Classic Snake Game",
+        "git":"https://github.com/KylesTech95/snake-game",
         "href":"https://kylestech95.github.io/snake-game/"
     },
         "mongo":{
@@ -11,6 +12,7 @@
         "lang":["js","html","css","mongodb"],
         "type":"gadget",
         "description":"Mongo Database Playground (CRUD)",
+        "git":"https://github.com/KylesTech95/database-playground-fork",
         "href":"https://database-playground-fork.onrender.com"
     },
         "idogsit":{
@@ -18,6 +20,7 @@
         "lang":["js","html","css"],
         "type":"design",
         "description":"Dog Sitting Website (Design)",
+        "git":"https://github.com/KylesTech95/idogsit/tree/frontendv2",
         "href":"https://kylestech95.github.io/idogsit/"
         },
         "mancala":{
@@ -25,6 +28,7 @@
         "lang":["js","html","css"],
         "type":"game",
         "description":"Classic Mancala Game",
+        "git":"https://github.com/KylesTech95/mancala-game",
         "href":"https://kylestech95.github.io/mancala-game/"
     },
     "encryption":{
@@ -32,6 +36,7 @@
         "lang":["js","html","css","nodeJS"],
         "type":"gadget",
         "description":"Understanding the basics of Key encryption",
+        "git":"https://github.com/index-daddy372466/key-encryption-playground",
         "href":"https://key-encryption-playground.onrender.com"
     },
     "calculator":{
@@ -39,6 +44,7 @@
         "lang":["js","html","css"],
         "type":"gadget",
         "description":"Basic Calculator",
+        "git":"https://github.com/KylesTech95/calculator-ks",
         "href":"https://kylestech95.github.io/calculator-ks"
     },
     "simon":{
@@ -46,6 +52,7 @@
         "lang":["ReactJS","js","html","css"],
         "type":"game",
         "description":"Simon Says Game",
+        "git":"https://github.com/index-daddy372466/simon-says-reactjs",
         "href":"https://simon-says-reactjs.onrender.com/"
     },
     "filesystem":{
@@ -53,6 +60,7 @@
         "lang":["nodeJS","express","js","html","css"],
         "type":"gadget",
         "description":"Mock File system",
+        "git":"https://github.com/KylesTech95/fileuploader",
         "href":"https://kylestech95.github.io/fileuploader/"
     },
     "shaggy":{
@@ -60,6 +68,7 @@
         "lang":["js","html","css"],
         "type":"design",
         "description":"Static web page, or landing page",
+        "git":"https://github.com/index-daddy372466/shaggy-secrets",
         "href":"https://index-daddy372466.github.io/shaggy-secrets/"
     },
     "todo":{
@@ -67,6 +76,7 @@
         "lang":["c language", "gnu"],
         "type":"gadget",
         "description":"Todo List in command line",
+        "git":"",
         "href":"https://github.com/KylesTech95/to-do"
     },
     "iriebird":{
@@ -74,6 +84,7 @@
         "lang":["js", "css","html"],
         "type":"game",
         "description":"Iriebird game",
+        "git":"https://github.com/KylesTech95/nestjs-starter/tree/flappybird-frontend",
         "href":"https://kylestech95.github.io/nestjs-starter/"
     },
     "dimmerjs":{
@@ -81,6 +92,7 @@
         "lang":["js", "css","html"],
         "type":"gadget",
         "description":"Content Dimmer",
+        "git":"https://github.com/KylesTech95/nbl/tree/dimmer",
         "href":"https://kylestech95.github.io/nbl/"
     },
     "selectiontool":{
@@ -88,6 +100,7 @@
         "lang":["reactJS", "css","html"],
         "type":"design",
         "description":"Tile Selection Tool",
+        "git":"https://github.com/KylesTech95/tile-selection-tool-interactive",
         "href":"https://kylestech95.github.io/tile-selection-tool-interactive/"
     }
 }

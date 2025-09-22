@@ -1,10 +1,14 @@
 <script setup>
-defineProps({
+
+const props = defineProps({
     appData:{
         type:Object,
         required:false
     }
 })
+
+console.log(props.appData.git)
+
 </script>
 
 
@@ -13,6 +17,7 @@ defineProps({
     <div class="app-item-link">
       <!-- access href - vue style -->
       <a target="_blank" class="app-link" :href="appData.href">{{ appData.name }}</a>
+      <a target="_blank" v-if="props.appData.git" class="git-link" :href="appData.git">Github</a>
     </div>
 
 </template>
@@ -41,6 +46,25 @@ defineProps({
   width:100%;
   text-align: center;
   text-transform: uppercase;
+}
+.git-link{
+  border-left:none;
+  border-right: none;
+   border-top:none;
+   border-bottom:2px solid rgb(166, 0, 255);
+    border-radius: 18px;
+    padding:.05rem 0;
+  /* heighT:100%; */
+  font-size:11pt;
+  width:150px;
+  text-align: left;
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+}
+.git-link:hover{
+  color:rgb(223, 89, 228);
+  letter-spacing:1.5px;
 }
 
 </style>
