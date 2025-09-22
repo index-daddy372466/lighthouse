@@ -7,7 +7,7 @@ const props = defineProps({
     }
 })
 
-console.log(props.appData.git)
+// console.log(props.appData.git)
 
 </script>
 

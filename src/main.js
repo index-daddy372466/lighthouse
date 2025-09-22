@@ -54,9 +54,6 @@ window.onresize = () => {
 }
 window.onscroll = () => {
 
-// console.log(scrollTop)
-// console.log(scrollY)
-
 if(scrollY === scrollTop){
     headerhr.style.top = initialheaderhr + "px"
     // header.style.backgroundImage = 'linear-gradient(transparent,transparent)';
@@ -78,7 +75,6 @@ if(scrollY > scrollTop){
     header.classList.add('fixed')
     header.classList.remove('absolute')
 }
-
 for(let i = 0; i < intros.length; i++){
     let ypos = intros[i].getBoundingClientRect().y;
     let bottomypos = ypos + intros[i].clientHeight;
@@ -120,7 +116,6 @@ for(let i = 0; i < intros.length; i++){
         }
     }
 }
-
 
 } // window on scroll end
 /*  ------------------------------------------------------ window onscroll ------------------------------------------------------ */
@@ -219,28 +214,14 @@ for(let j = 0; j < appcontainer.length; j++){
 }
 /*  ------------------------------------------------------ application-container ------------------------------------------------------ */
 
-/*  ------------------------------------------------------ application title onclick ------------------------------------------------------ */
+/*  ------------------------------------------------------ application title ------------------------------------------------------ */
+// Tile onclick is handled @ components/Section.vue
 const apptitles = document.querySelectorAll('#app-title');
 const applegend = document.getElementById('legend-container')
 apptitles.forEach((title,idx)=>{
   const obj = pullObject(tools,title.textContent)||false;
-
   // set height
   title.style.height = (applegend.clientHeight / apptitles.length) + "px"
-  // onclick
-  title.onclick = e => {
-    const target = e.currentTarget || e.target;
-    let text = target.textContent;
-
-    // pull object based on description/title
-    const object = pullObject(tools,text)||false;
-    if(object===false){
-      console.log('nothing was pulled');
-    } else {
-      window.open(object.href, '_blank')
-    }
-
-  }
   // create shortcut element
   let shortcut = document.createElement('a');
   // console.log(shortcut)
@@ -251,11 +232,7 @@ apptitles.forEach((title,idx)=>{
   applegend.appendChild(shortcut);
 })
 
-/*  ------------------------------------------------------ application title onclick ------------------------------------------------------ */
-
-
-
-function pullObject(obj,text){
+export function pullObject(obj,text){
   // iterate through object
   let target;
   let description = 'description'
@@ -269,6 +246,8 @@ function pullObject(obj,text){
   }
   return target||false
 }
+/*  ------------------------------------------------------ application title ------------------------------------------------------ */
+
 
 
 /*  ------------------------------------------------------ onload ------------------------------------------------------ */
@@ -280,70 +259,5 @@ window.onload = e => {
 }
 /*  ------------------------------------------------------ onload ------------------------------------------------------ */
 
-/*  ------------------------------------------------------ onkeydown ------------------------------------------------------ */
-// const shortcuts = [...document.querySelectorAll('.shortcut')]
-// let keytarget = 0
-
-// window.onkeydown = e => {
-//   let key = e.key;
-//   let arrowUp = (key==='ArrowUp'|| /ArrowUp/g.test(key));
-//   let arrowDown = (key==='ArrowDown'|| /ArrowDown/g.test(key));
-
-//   if(arrowUp || arrowDown){
-//     e.preventDefault()
-
-//     let split, section, gethref, href
-//     // scroll to the target
-//     if(arrowDown){
-//       keytarget+=1;
-//         // capture the section from href
-//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
-//         section = document.getElementById(href);
-//     }
-//     if(arrowUp){
-//       keytarget-=1
-//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
-//         section = document.getElementById(href);
-//     }
-//     console.log(section)
-//     window.scrollTo(0,section.getBoundingClientRect().y)
-  
-//     console.log(keytarget)
-//   }
-// }
-/*  ------------------------------------------------------ onkeydown ------------------------------------------------------ */
-
-// let keytarget = 0
-// function handleKeyDown(e){
-//   let key = e.key;
-//   let arrowUp = (key==='ArrowUp'|| /ArrowUp/g.test(key));
-//   let arrowDown = (key==='ArrowDown'|| /ArrowDown/g.test(key));
-
-//   if(arrowUp || arrowDown){
-//     e.preventDefault()
-//     // keytarget = shortcuts.indexOf(shortcuts.find(x=>x.classList.contains('green-bg')))||0
-//     keytarget = 0
-
-//     let split, section, gethref, href
-//     // scroll to the target
-//     if(arrowDown){
-//       keytarget+=1;
-//         // capture the section from href
-//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
-//         section = document.getElementById(href);
-//     }
-//     if(arrowUp){
-//       keytarget-=1
-//         split = shortcuts[keytarget].href.split`/`, gethref = split[split.length-1], href = gethref.slice(1,gethref.length)
-//         section = document.getElementById(href);
-//     }
-//     console.log(section)
-//     window.scrollTo(0,section.getBoundingClientRect().y)
-  
-//     console.log(keytarget)
-//   }
-
-    
-// }
 
 

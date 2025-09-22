@@ -1,6 +1,8 @@
 <script setup>
 import { computed } from 'vue';
 import Applications from './Applications.vue';
+import tools from '../assets/projects.json'
+import { pullObject } from '@/main';
 import { ref } from 'vue';
 
 const props = defineProps({
@@ -30,6 +32,20 @@ const props = defineProps({
       required:false,
     }
 })
+// handleClick
+function handleClick(e){
+    // console.log("You clicked " + e.currentTarget.textContent)
+    const target = e.currentTarget || e.target;
+    let text = target.textContent;
+
+    // pull object based on description/title
+    const object = pullObject(tools,text)||false;
+    if(object===false){
+    console.log('nothing was pulled');
+    } else {
+    window.open(object.href, '_blank')
+    }
+}
 const propIsEnabled = (props.enabled === true && props.enabled !== false)
 // console.log(props.id)
 // add dynamic background by language
@@ -48,7 +64,7 @@ let appData = ref(props.proData)
         backgroundSize:`36%`,
         backgroundPosition:`center 498px`,
         }">
-          <h3 id="app-title">{{ props.proName }}</h3>
+          <h3 id="app-title" @click="(e) => handleClick(e)">{{ props.proName }}</h3>
           <!-- app container -->
           <div v-if="props.proData" id="app-container">
               <Applications :app-data="appData"/>
