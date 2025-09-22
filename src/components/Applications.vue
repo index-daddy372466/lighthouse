@@ -39,7 +39,10 @@ console.log(props.appData.git)
   letter-spacing:1.5px;
 }
 .app-link{
-    border:2px solid #0f0;
+    border-left:none;
+   border-right: none;
+   border-top:none;
+   border-bottom:2px solid #0f0;
     border-radius: 18px;
   /* heighT:100%; */
   font-size:16pt;

@@ -30,7 +30,10 @@ overflow-y:scroll;
 z-index: 999;
 }
 .green-bg{
-  background:rgba(0, 189, 126, 0.53);
+  background:rgba(0, 189, 126,1);
+  color:#000;
+  font-size:9pt !important;
+  transform:rotate(-2.5deg)translate(-10px,0) !important;
 }
 .shortcut:hover{
   background:rgba(0, 189, 126, 0.53)
