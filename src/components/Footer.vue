@@ -17,10 +17,34 @@ msg:{
      <div id="title-container">
       <h1 class="green">{{ msg }}</h1>
     </div>
+    <div id="contact-container">
+        <a href="mailto:kylestech95@outlook.com" id="email-link" class="contact-link"><img src="../assets/media/email.png" alt=""></a>
+        <a href="tel:954.853.6213" id="phone-link" class="contact-link"><img src="../assets/media/phone.png" alt=""></a>
+    </div>
     </footer>
 </template>
 
 <style scoped>
+.contact-link{
+    transition: .25s;
+}
+.contact-link:hover{
+    transform:scale(.9);
+    cursor:pointer;
+}
+#contact-container{
+    width:250px;
+    position:absolute;
+    left:120px;
+    bottom:-15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+#contact-container>a>img{
+    width:32px;
+}
 #logo-footer{
   position:fixed;
   left:0;
