@@ -6,7 +6,7 @@ import Pageinfo from './Pageinfo.vue'
 import Header from './Header.vue';
 import { ref } from 'vue';
 import AppLegend from './AppLegend.vue';
-import {snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
+import {agecalculator ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
 
 let games = {
   snake:ref(snake),
@@ -21,7 +21,8 @@ let gadgets = {
   mongodb:ref(mongo),
   filesystem:ref(filesystem),
   todo:ref(todo),
-  dimmerjs:ref(dimmerjs)
+  dimmerjs:ref(dimmerjs),
+  calcage:ref(agecalculator)
 }
 let design = {
   shaggy:ref(shaggy),
@@ -50,6 +51,7 @@ let design = {
     <Section :enabled="Boolean(true)" id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
     <Section :enabled="Boolean(true)" id="dimmerjs" :pro-name="gadgets.dimmerjs.value.description" :pro-data="gadgets.dimmerjs.value" bgImage="dimmerjs" msg="Take control of your eye sight with this dimmer programming interface. Drag the icon with a mouse or finger to change the brightness, switch out icons and change the color of the tooltip."/>
     <Section :enabled="Boolean(true)" id="iriebird" :pro-name="games.iriebird.value.description" :pro-data="games.iriebird.value" bgImage="iriebird" msg="A flappy-bird mock game with a carribean touch. Guide a bird through a series of moving green pipes by tapping the screen to make it flap its wings"/>
+    <Section :enabled="Boolean(true)" id="calcage" :pro-name="gadgets.calcage.value.description" :pro-data="gadgets.calcage.value" bgImage="calcage" msg="Age in Minutes/Hours App: Users input their birthdate, and the app calculates their age in minutes or hours. This involves working with date and time objects, input handling, and displaying calculated results."/>
     <Section :enabled="Boolean(true)" id="selectiontool" :pro-name="design.selectiontool.value.description" :pro-data="design.selectiontool.value" bgImage="selectiontool" msg="hover/click over 6 tiles represented by aggressive-looking animals"/>
     <Section :enabled="Boolean(true)" id="idogsit" :pro-name="design.idogsit.value.description" :pro-data="design.idogsit.value" bgImage="idogsit" msg="Front end single-page design of a dog sitting webite with a signup form included."/>
     <Section :enabled="Boolean(true)" id="mongo" :pro-name="gadgets.mongodb.value.description" :pro-data="gadgets.mongodb.value" bgImage="mongodb" msg="A non-relational database programmed to increase understanding of the basic functions (Create, Read, Update, Delete)."/>

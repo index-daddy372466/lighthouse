@@ -102,6 +102,13 @@
         "description":"Tile Selection Tool",
         "git":"https://github.com/KylesTech95/tile-selection-tool-interactive",
         "href":"https://kylestech95.github.io/tile-selection-tool-interactive/"
+    },
+    "agecalculator":{
+        "name":"Age Calculator",
+        "lang":["Java", "Kotlin","npm"],
+        "type":"gadget",
+        "description":"Module to calculate age",
+        "href":"https://github.com/kylestech95/age-calculator/"
     }
 }
 
