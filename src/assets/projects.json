@@ -15,6 +15,14 @@
         "git":"https://github.com/KylesTech95/database-playground-fork",
         "href":"https://database-playground-fork.onrender.com"
     },
+        "scorekeeper":{
+        "name":"Scorekeeper",
+        "lang":["js","html","css"],
+        "type":"gadget",
+        "description":"Score Keeper",
+        "git":"https://github.com/KylesTech95/scorekeeper",
+        "href":"https://kylestech95.github.io/scorekeeper/"
+    },
         "idogsit":{
         "name":"idogsit",
         "lang":["js","html","css"],
