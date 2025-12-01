@@ -94,7 +94,6 @@ let appData = ref(props.proData)
   left:10px;
   z-index:999;
   padding:.5rem;
-transition:.25s;
 }
 #app-container{
     height:100%;
