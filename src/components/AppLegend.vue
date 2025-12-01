@@ -3,7 +3,7 @@
 
 <template>
 
-<div id="legend-container"></div>
+<div id="legend-container" class="no-scrollbar"></div>
 
 </template>
 
@@ -13,15 +13,12 @@ transition: .25s;
 position:fixed;
 right:0;
 top:175px;
-/* bordeR:2px solid green; */
-/* border-left:1px solid hsla(160, 100%, 37%, 1); */
-/* border-left:1px solid hsla(160, 100%, 37%, 1); */
-width:125px;
-/* height: 350px; */
+width:105px;
 height: 70%;
 display:flex;
 flex-direction: column;
 align-items: center;
+border-left:.5px solid #000;
 justify-content: space-evenly;
 overflow:hidden;
 gap:.25rem;
@@ -31,23 +28,23 @@ z-index: 999;
 .green-bg{
   background:rgba(0, 189, 126,1);
   color:#000;
-  font-size:9pt !important;
-  transform:rotate(-2.5deg)translate(-10px,0) !important;
+  font-size:11pt !important;
+  transform:rotate(2.5deg)translate(5px,0) !important;
 }
 .shortcut:hover{
   background:rgba(0, 189, 126, 0.53)
 
 }
 .shortcut{
-  width:125px;
+  width:100%;
   height:100%;
   display:flex;
+  text-align:center;
   flex-direction: column;
   align-items: start;
   justify-content: end;
   border-bottom:.75px solid #000;
-  font-size:8pt;
-  transform:rotate(-2.5deg);
+  font-size:11pt;
 }
 .no-selection {
   user-select: none; /* Standard syntax */

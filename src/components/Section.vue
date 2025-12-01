@@ -49,9 +49,9 @@ function handleClick(e){
 const propIsEnabled = (props.enabled === true && props.enabled !== false)
 // console.log(props.id)
 // add dynamic background by language
-let dynamicBg = computed(()=>{
-    return new URL(`/src/assets/media/backgrounds/${props.bgImage}.png`,import.meta.url).href
-})
+// let dynamicBg = computed(()=>{
+//     return new URL(`/src/assets/media/backgrounds/${props.bgImage}.png`,import.meta.url).href
+// })
 // pass project data to app data
 let appData = ref(props.proData)
 </script>
@@ -59,7 +59,7 @@ let appData = ref(props.proData)
 
 <template>
     <div v-if="propIsEnabled" :id="props.id" class="anchor section-container into-bg" :style="{
-        backgroundImage: `url('${dynamicBg}')`,
+        // backgroundImage: `url('${dynamicBg}')`,
         backgroundRepeat:`no-repeat`,
         backgroundSize:`36%`,
         backgroundPosition:`center 498px`,
@@ -98,8 +98,11 @@ transition:.25s;
 }
 #app-container{
     height:100%;
-    width:350px;
-    /* border:2px solid red; */
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start
 }
 .section-container{
     height:100vh;
@@ -155,7 +158,6 @@ transition:.25s;
     border-bottom:.25px solid rgb(255, 255, 255);
     padding:.5rem;
     border-radius: 12px;
-    background-image:linear-gradient(180deg,rgba(0, 189, 126, 0.697),#000 70%);
     filter: contrast(150%);
     line-height:1.5;
     text-indent: .25in;

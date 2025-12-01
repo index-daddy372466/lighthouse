@@ -66,7 +66,6 @@ if(scrollY === scrollTop){
     header.classList.remove('fixed')
 }
 if(scrollY > scrollTop){
-    litehousetitle.classList.add('black-bg-header')
     headerhr.style.top = subheader.getBoundingClientRect().y + subheader.clientHeight + 5 + "px"
     // header.style.backgroundImage = 'linear-gradient(#000,transparent 99%)';
     // console.log("Fixed Top")

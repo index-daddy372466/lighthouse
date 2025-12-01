@@ -31,7 +31,7 @@ const props = defineProps({
     min-width:400px;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 .app-link:hover{
@@ -47,7 +47,7 @@ const props = defineProps({
     border-radius: 18px;
   /* heighT:100%; */
   font-size:16pt;
-  width:100%;
+  width:50%;
   text-align: center;
   text-transform: uppercase;
 }
