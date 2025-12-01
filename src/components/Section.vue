@@ -152,6 +152,14 @@ transition:.25s;
     /* border:2px solid green; */
     height:500px;
 }
+#para-id,
+.app-link,
+.git-link,
+#app-title,
+#app-item-link{
+    color:var(--color-primary);
+
+}
 #para-id{
     max-width:500px;
     box-shadow:.25rem .25rem 10px .9px #2c3e509b;

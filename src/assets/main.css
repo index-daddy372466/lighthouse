@@ -1,5 +1,24 @@
 @import './base.css';
 
+/* colors */
+:root {
+  --color-primary: #000;
+  --tint:#fff;
+  --shade:#000;
+}
+/* background-colors */
+:root{
+  --background-legend-shortcut:rgba(0, 189, 126,1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-primary: #ffffff;
+}
+:root{
+  --background-legend-shortcut:rgb(0, 117, 78);
+  
+}
+}
 #app {
   width:100%;
   margin: 0 auto;
@@ -23,6 +42,11 @@ header{
     padding-right:.5rem;
     z-index: 997;
   }
+  #subheader,
+  .shortcut{
+    color:var(--color-primary) !important;
+  }
+
   .bg-custom{
     background-color:#000;
   }
@@ -318,9 +342,7 @@ a,
     width:90px;
     height:90px;
   }
-  #stats-container{
-    right: 30px !important;;
-  }
+
   .green{
     transform:translate(50px,0);
     margin-left:unset !important;

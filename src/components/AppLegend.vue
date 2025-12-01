@@ -26,7 +26,7 @@ overflow-y:scroll;
 z-index: 999;
 }
 .green-bg{
-  background:rgba(0, 189, 126,1);
+  background:var(--background-legend-shortcut);
   color:#000;
   font-size:11pt !important;
   transform:rotate(2.5deg)translate(5px,0) !important;
