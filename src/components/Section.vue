@@ -47,11 +47,7 @@ function handleClick(e){
     }
 }
 const propIsEnabled = (props.enabled === true && props.enabled !== false)
-// console.log(props.id)
-// add dynamic background by language
-// let dynamicBg = computed(()=>{
-//     return new URL(`/src/assets/media/backgrounds/${props.bgImage}.png`,import.meta.url).href
-// })
+
 // pass project data to app data
 let appData = ref(props.proData)
 </script>

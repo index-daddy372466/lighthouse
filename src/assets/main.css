@@ -20,7 +20,7 @@
 }
 :root{
   --background-legend-shortcut:rgb(0, 117, 78);
-  
+
 }
 }
 #app {
@@ -236,6 +236,7 @@ a,
   }
   body{
     overflow-x:none;
+    height:250vh !important;
   }
 
   #title-container>h1{
@@ -271,7 +272,7 @@ a,
     flex-direction: column !important;
     width:88% !important;
     /* border:2px solid red; */
-    height:66vh !important;
+    height:100% !important;
   }
   #app-title{
     top:0 !important;
@@ -305,7 +306,7 @@ a,
 .app-link{
   font-size:12pt !important;
   width:200px !important;
-  
+
 }
 
 

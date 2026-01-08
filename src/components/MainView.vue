@@ -6,7 +6,7 @@ import Pageinfo from './Pageinfo.vue'
 import Header from './Header.vue';
 import { ref } from 'vue';
 import AppLegend from './AppLegend.vue';
-import {agecalculator, scorekeeper ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
+import {agecalculator ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
 
 let games = {
   snake:ref(snake),
@@ -16,7 +16,6 @@ let games = {
 }
 
 let gadgets = {
-  scorekeeper:ref(scorekeeper),
   calculator:ref(calculator),
   encryption:ref(encryption),
   mongodb:ref(mongo),
@@ -49,9 +48,9 @@ let design = {
     <!-- intro -->
 
     <Section :enabled="Boolean(true)" id="welcome"  proName="Welcome" bgImage="vue" msg="Welcome to the Litehouse, a lightweight portfolio made with the Vue framework. My name is Kyle, a web developer. As you scroll further, you may discover customized games, modules and ideas as well as it's source code. Collaborations and inquires are welcome!"/>
-    <Section :enabled="Boolean(true)" id="scorekeeper" :pro-name="gadgets.scorekeeper.value.description" :pro-data="gadgets.scorekeeper" bgImage="scorekeeper" msg="Track scores, assists, and more with Scorekeeper."/>
-    <Section :enabled="Boolean(false)" id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
-    <Section :enabled="Boolean(false)" id="dimmerjs" :pro-name="gadgets.dimmerjs.value.description" :pro-data="gadgets.dimmerjs.value" bgImage="dimmerjs" msg="Take control of your eye sight with this dimmer programming interface. Drag the icon with a mouse or finger to change the brightness, switch out icons and change the color of the tooltip."/>
+    <!-- <Section :enabled="Boolean(false)" id="" :pro-name="gadgets.scorekeeper.value.description" :pro-data="gadgets.scorekeeper" bgImage="scorekeeper" msg=""/> -->
+    <Section :enabled="Boolean(true)" id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
+    <Section :enabled="Boolean(true)" id="dimmerjs" :pro-name="gadgets.dimmerjs.value.description" :pro-data="gadgets.dimmerjs.value" bgImage="dimmerjs" msg="Take control of your eye sight with this dimmer programming interface. Drag the icon with a mouse or finger to change the brightness, switch out icons and change the color of the tooltip."/>
     <Section :enabled="Boolean(true)" id="iriebird" :pro-name="games.iriebird.value.description" :pro-data="games.iriebird.value" bgImage="iriebird" msg="A flappy-bird mock game with a carribean touch. Guide a bird through a series of moving green pipes by tapping the screen to make it flap its wings"/>
     <Section :enabled="Boolean(false)" id="calcage" :pro-name="gadgets.calcage.value.description" :pro-data="gadgets.calcage.value" bgImage="calcage" msg="Age in Minutes/Hours App: Users input their birthdate, and the app calculates their age in minutes or hours. This involves working with date and time objects, input handling, and displaying calculated results."/>
     <Section :enabled="Boolean(false)" id="selectiontool" :pro-name="design.selectiontool.value.description" :pro-data="design.selectiontool.value" bgImage="selectiontool" msg="hover/click over 6 tiles represented by aggressive-looking animals"/>
