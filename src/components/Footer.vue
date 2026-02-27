@@ -33,14 +33,15 @@ msg:{
     cursor:pointer;
 }
 #contact-container{
-    width:250px;
-    position:absolute;
+    position:fixed;
     left:120px;
-    bottom:-15px;
+    padding:4px;
+    background:#fff;
+    bottom:0;
     display:flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: end;
 }
 #contact-container>a>img{
     width:32px;

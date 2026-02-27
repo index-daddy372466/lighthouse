@@ -3,6 +3,7 @@
 /* colors */
 :root {
   --color-primary: #000;
+  --color-secondary: #fff;
   --tint:#fff;
   --shade:#000;
 }
@@ -17,6 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
   --color-primary: #ffffff;
+  --color-secondary: #000;
 }
 :root{
   --background-legend-shortcut:rgb(0, 117, 78);
@@ -205,7 +207,6 @@ a,
   font-size:60px;
 }
 
-
 /* landscape mobile */
 @media screen and (max-width:967px) and (max-height:500px){
 .shortcut{
@@ -236,7 +237,7 @@ a,
   }
   body{
     overflow-x:none;
-    height:250vh !important;
+    height:375vh !important;
   }
 
   #title-container>h1{
@@ -285,7 +286,9 @@ a,
   }
 
 }
-
+.git-link{
+  display:none !important;
+}
 @media screen and (min-width:1010px) {
   .section-container{
     background-size:300px !important;
@@ -302,6 +305,7 @@ a,
     margin-top:4rem !important;
   }
 .git-link{
+  display:none !important;
 }
 .app-link{
   font-size:12pt !important;
@@ -365,6 +369,7 @@ a,
 
 
 }
+
 
 
 

@@ -100,7 +100,7 @@ let appData = ref(props.proData)
     justify-content: start
 }
 .section-container{
-    height:100vh;
+    height:100%;
     gap:1rem;
     width:100%;
     position:relative;
