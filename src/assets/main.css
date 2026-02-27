@@ -268,8 +268,6 @@ a,
     transform:scale(.77) translate(0,300px) !important;
     background-size:33% !important;
     gap:3rem !important;
-    align-items: start !important;
-    justify-content: end !important;
     flex-direction: column !important;
     width:88% !important;
     /* border:2px solid red; */
