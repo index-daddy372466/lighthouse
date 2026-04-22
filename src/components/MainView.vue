@@ -6,7 +6,7 @@ import Pageinfo from './Pageinfo.vue'
 import Header from './Header.vue';
 import { ref } from 'vue';
 import AppLegend from './AppLegend.vue';
-import {agecalculator ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
+import {agecalculator,runwithkyle,scorekeeper ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
 
 let games = {
   snake:ref(snake),
@@ -22,7 +22,9 @@ let gadgets = {
   filesystem:ref(filesystem),
   todo:ref(todo),
   dimmerjs:ref(dimmerjs),
-  calcage:ref(agecalculator)
+  calcage:ref(agecalculator),
+  scorekeeper:ref(scorekeeper),
+  runwithkyle:ref(runwithkyle),
 }
 let design = {
   shaggy:ref(shaggy),
@@ -48,7 +50,8 @@ let design = {
     <!-- intro -->
 
     <Section :enabled="Boolean(true)" id="welcome"  proName="Welcome" bgImage="vue" msg="Welcome to the Litehouse, a lightweight portfolio made with the Vue framework. My name is Kyle, a web developer. As you scroll further, you may discover customized games, modules and ideas as well as it's source code. Collaborations and inquires are welcome!"/>
-    <!-- <Section :enabled="Boolean(false)" id="" :pro-name="gadgets.scorekeeper.value.description" :pro-data="gadgets.scorekeeper" bgImage="scorekeeper" msg=""/> -->
+    <Section :enabled="Boolean(true)" id="scorekeeper" :pro-name="gadgets.scorekeeper.value.description" :pro-data="gadgets.scorekeeper" bgImage="scorekeeper" msg="This JavaScript-based web app is a responsive and action-tracker acting as a user agent for real-time data input. It streamlines game management by turning input into a gamified experience, featuring multi-tasking capabilities for simultaneous tracking, recording, and editing score events through a responsive HTML/CSS interface."/>
+    <Section :enabled="Boolean(true)" id="runwithkyle" :pro-name="gadgets.runwithkyle.value.description" :pro-data="gadgets.runwithkyle" bgImage="runwithkyle" msg="This Running Session Tracker is a lightweight web application allowing guests to log run duration and distance using local browser storage. Built with HTML, CSS, and vanilla JS, it offers an immediate, minimalist interface for session tracking. Development plans include implementing Node.js/Express for user authentication, a Postgres database for persistence, and gamification like weekly goals and level-ups."/>
     <Section :enabled="Boolean(false)" id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
     <Section :enabled="Boolean(false)" id="dimmerjs" :pro-name="gadgets.dimmerjs.value.description" :pro-data="gadgets.dimmerjs.value" bgImage="dimmerjs" msg="Take control of your eye sight with this dimmer programming interface. Drag the icon with a mouse or finger to change the brightness, switch out icons and change the color of the tooltip."/>
     <Section :enabled="Boolean(false)" id="iriebird" :pro-name="games.iriebird.value.description" :pro-data="games.iriebird.value" bgImage="iriebird" msg="A flappy-bird mock game with a carribean touch. Guide a bird through a series of moving green pipes by tapping the screen to make it flap its wings"/>
@@ -58,7 +61,7 @@ let design = {
     <Section :enabled="Boolean(false)" id="mongo" :pro-name="gadgets.mongodb.value.description" :pro-data="gadgets.mongodb.value" bgImage="mongodb" msg="A non-relational database programmed to increase understanding of the basic functions (Create, Read, Update, Delete)."/>
     <Section :enabled="Boolean(false)" id="todo" :pro-name="gadgets.todo.value.description" :pro-data="gadgets.todo" bgImage="todo" msg="A todo list with all of it's basic functions. Clients should be able to create a todo, read it clearly, edit, and delete todos within the list."/>
     <Section :enabled="Boolean(true)" id="calculator" :pro-name="gadgets.calculator.value.description" :pro-data="gadgets.calculator" bgImage="calculator" msg="A calculator that performs fundamental arithmetic operations, namely addition, subtraction, multiplication, and division"/>
-    <Section :enabled="Boolean(true)" id="shaggy" :pro-name="design.shaggy.value.description" :pro-data="design.shaggy" bgImage="shaggy" msg="A static web solution assecible on desktop and mobile devices. Key features include a responsive user interface and navigation adaptability."/>
+    <Section :enabled="Boolean(false)" id="shaggy" :pro-name="design.shaggy.value.description" :pro-data="design.shaggy" bgImage="shaggy" msg="A static web solution assecible on desktop and mobile devices. Key features include a responsive user interface and navigation adaptability."/>
     <Section :enabled="Boolean(true)" id="mancala" :pro-name="games.mancala.value.description" :pro-data="games.mancala" bgImage="marble" msg="An ancient, two-player strategy board game played with small stones or seeds and a board with two rows of pits and two larger 'mancala' or store pits at the ends"/>
     <Section :enabled="Boolean(true)" id="simon" :pro-name="games.simon.value.description" :pro-data="games.simon" bgImage="simon" msg="A round electronic device where players must repeat a sequence of lights and sounds."/>
     <Section :enabled="Boolean(false)" id="encryption" :pro-name="gadgets.encryption.value.description" :pro-data="gadgets.encryption" bgImage="encryption" msg="A playground created to understand the basics around encrypting & signing data. This module includes but is not limited to symmetric/asymmetric encryption & creating signatures."/>

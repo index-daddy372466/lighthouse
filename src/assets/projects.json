@@ -109,6 +109,20 @@
         "type":"gadget",
         "description":"Module to calculate age",
         "href":"https://github.com/kylestech95/age-calculator/"
+    },
+    "scorekeeper":{
+        "name":"Recballscore",
+        "lang":["js", "css","html"],
+        "type":"gadget",
+        "description":"scorekeeper for basketball pick-up games",
+        "href":"https://www.recballscore.com"
+    },
+    "runwithkyle":{
+        "name":"Runwithkyle",
+        "lang":["js", "css","html"],
+        "type":"gadget",
+        "description":"Distance tracking app",
+        "href":"https:runwithkyle.onrender.com"
     }
 }
 

@@ -85,9 +85,9 @@ let appData = ref(props.proData)
 #app-title{
   font-weight: bold;
   font-size:21pt;
-  position:absolute;
+  /* position:absolute;
   top:250px;
-  left:10px;
+  left:10px; */
   z-index:999;
   padding:.5rem;
 }
@@ -100,7 +100,7 @@ let appData = ref(props.proData)
     justify-content: start
 }
 .section-container{
-    height:100vh;
+    height:75vh;
     width:100%;
     position:relative;
     display:flex;
