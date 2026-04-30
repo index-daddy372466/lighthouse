@@ -6,7 +6,7 @@ import Pageinfo from './Pageinfo.vue'
 import Header from './Header.vue';
 import { ref } from 'vue';
 import AppLegend from './AppLegend.vue';
-import {agecalculator,runwithkyle,scorekeeper ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
+import {agecalculator,runwithkyle,bf_calculator,scorekeeper ,snake, idogsit, encryption,mancala,calculator, simon, mongo, filesystem, shaggy, todo, iriebird, dimmerjs, selectiontool} from '../assets/projects.json'
 
 let games = {
   snake:ref(snake),
@@ -17,6 +17,7 @@ let games = {
 
 let gadgets = {
   calculator:ref(calculator),
+  bf_calculator:ref(bf_calculator),
   encryption:ref(encryption),
   mongodb:ref(mongo),
   filesystem:ref(filesystem),
@@ -51,6 +52,7 @@ let design = {
 
     <Section :enabled="Boolean(true)" id="welcome"  proName="Welcome" bgImage="vue" msg="Welcome to the Litehouse, a lightweight portfolio made with the Vue framework. My name is Kyle, a web developer. As you scroll further, you may discover customized games, modules and ideas as well as it's source code. Collaborations and inquires are welcome!"/>
     <Section :enabled="Boolean(true)" id="scorekeeper" :pro-name="gadgets.scorekeeper.value.description" :pro-data="gadgets.scorekeeper" bgImage="scorekeeper" msg="This JavaScript-based web app is a responsive and action-tracker acting as a user agent for real-time data input. It streamlines game management by turning input into a gamified experience, featuring multi-tasking capabilities for simultaneous tracking, recording, and editing score events through a responsive HTML/CSS interface."/>
+    <Section :enabled="Boolean(true)" id="bf_calculator" :pro-name="gadgets.bf_calculator.value.description" :pro-data="gadgets.bf_calculator" bgImage="bf_calculator" msg="Calculator your Body Mass Index (BMI) by height & weight, as well as Muscle mass & Fat mass."/>
     <Section :enabled="Boolean(true)" id="runwithkyle" :pro-name="gadgets.runwithkyle.value.description" :pro-data="gadgets.runwithkyle" bgImage="runwithkyle" msg="This Running Session Tracker is a lightweight web application allowing guests to log run duration and distance using local browser storage. Built with HTML, CSS, and vanilla JS, it offers an immediate, minimalist interface for session tracking. Development plans include implementing Node.js/Express for user authentication, a Postgres database for persistence, and gamification like weekly goals and level-ups."/>
     <Section :enabled="Boolean(false)" id="filesystem" :pro-name="gadgets.filesystem.value.description" :pro-data="gadgets.filesystem" bgImage="filesystem" msg="An original, customized filesystem aimed at meeting a comfortable user experience for clients during file uploads, file updates, file viewing and file deletions all on the client side."/>
     <Section :enabled="Boolean(false)" id="dimmerjs" :pro-name="gadgets.dimmerjs.value.description" :pro-data="gadgets.dimmerjs.value" bgImage="dimmerjs" msg="Take control of your eye sight with this dimmer programming interface. Drag the icon with a mouse or finger to change the brightness, switch out icons and change the color of the tooltip."/>

@@ -39,6 +39,14 @@
         "git":"https://github.com/index-daddy372466/key-encryption-playground",
         "href":"https://key-encryption-playground.onrender.com"
     },
+    "bf_calculator":{
+        "name":"Body Fat Calculator",
+        "lang":["js","html","css"],
+        "type":"gadget",
+        "description":"Body Fat Calculator",
+        "git":"https://github.com/KylesTech95/therightfit",
+        "href":"https://therightfit.onrender.com/calculate/bmi/"
+    },
     "calculator":{
         "name":"Basic Calculator",
         "lang":["js","html","css"],
